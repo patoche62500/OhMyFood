@@ -107,7 +107,7 @@ header {
   width: 100%;
   gap: 17px;
   padding: 15px;
-  background-color: aquamarine;
+  background-color: rgb(107, 107, 107);
 }
 
 footer {
@@ -126,7 +126,7 @@ footer ul {
 section {
   padding: 50px;
   height: 800px;
-  background-color: rgb(41, 29, 227);
+  background-color: rgb(146, 40, 55);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +137,7 @@ section {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: rgb(171, 24, 29);
+  background-color: rgb(225, 77, 155);
   padding: 50px;
 }
 
@@ -147,7 +147,7 @@ section {
 
 /*Components*/
 .card {
-  background-color: rgb(71, 250, 33);
+  background-color: rgb(248, 163, 18);
   height: 50%;
   width: 200px;
   border-radius: 5px;
@@ -166,7 +166,7 @@ section {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  background-color: rgb(3, 173, 123);
+  background-color: rgb(40, 217, 140);
   height: 100%;
 }
 .card__element .card__image img {
@@ -256,12 +256,10 @@ section {
 /*Themes*/
 /*Vendors*/
 main {
-  /*
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  //padding: 50px;
-  */
+  align-items: center;
+  gap: 20px;
 }
 
 a {
