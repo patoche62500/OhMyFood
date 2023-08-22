@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "sass": "sass -w sass/main.scss Assets/Css/style.css"
+    "dev": "sass -w ./Sass/main.scss ./Assets/Css/style.css",
+    "build": "sass ./Sass/main.scss ./Assets/Css/style.css"
   },
   "dependencies": {
     "sass": "^1.65.1"
   },
-  "description": "npm run sass"
+  "description": "npm run dev"
 
 }

@@ -89,7 +89,7 @@ header {
 section {
   padding: 50px;
   height: 800px;
-  background-color: rgb(145, 40, 136);
+  background-color: rgb(69, 254, 197);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +100,7 @@ section {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: rgb(77, 66, 175);
+  background-color: rgb(100, 44, 34);
   padding: 50px;
 }
 
@@ -110,7 +110,7 @@ section {
 
 /*Components*/
 .card {
-  background-color: rgb(239, 87, 65);
+  background-color: rgb(84, 67, 175);
   height: 50%;
   width: 200px;
   border-radius: 5px;
@@ -129,7 +129,7 @@ section {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  background-color: rgb(163, 176, 68);
+  background-color: rgb(245, 112, 103);
   height: 100%;
 }
 .card__element .card__image img {

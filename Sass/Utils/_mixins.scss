@@ -26,3 +26,9 @@
     text-align: $aligntext;
   }
 }
+
+@mixin min1920() {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
