@@ -1,0 +1,28 @@
+@mixin flex(
+  $flexDirection: row,
+  $JustifyContent: flex-start,
+  $alignItems: stretch,
+  $aligncontent: normal,
+  $gap: 0px,
+  $aligntext: left
+) {
+  display: flex;
+  @if $flexDirection != row {
+    flex-direction: $flexDirection;
+  }
+  @if $JustifyContent != flex-start {
+    justify-content: $JustifyContent;
+  }
+  @if $alignItems != stretch {
+    align-items: $alignItems;
+  }
+  @if $aligncontent != normal {
+    align-content: $aligncontent;
+  }
+  @if $gap != 0px {
+    gap: $gap;
+  }
+  @if $aligntext != left {
+    text-align: $aligntext;
+  }
+}

@@ -1,0 +1,38 @@
+/*Globale Variable*/
+$color-globale: var(--colorColor);
+/*Header Variable*/
+$bg-color-header: var(--bgheader);
+$Gap-Globale: Var(--gap);
+
+/* Declaration des variables */
+:root {
+  //#{$color-globale}
+  /*Globable*/
+  --colorColor: rgb(0, 0, 0);
+  /* Header */
+  --gap: 10px;
+  --bgheader: grey;
+  //---------------
+  --headerheight: 100px;
+  --colornavbar: rgb(0, 0, 0);
+  --fontcolornavbar: white;
+  --fontsizenavbar: 16px;
+
+  /* Footer */
+  --footerheight: 100px;
+
+  --backgroundcolor: black;
+
+  /* font */
+  --fontcolor: white;
+
+  /* Border */
+  --bordercolor: yellow;
+  --bordersize: 1px;
+  --bordertype: solid;
+
+  /* section */
+  --sectionheight: 500px;
+
+  color: $color-globale;
+}

@@ -1,0 +1,4 @@
+@function RandomColor() {
+    $randomcolor : rgb(random(255), random(255), random(255));
+    @return $randomcolor;
+}

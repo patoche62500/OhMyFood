@@ -1,0 +1,33 @@
+header {
+  @include flex($JustifyContent:center, $gap : 25px);
+  padding:10px;
+  background-color: $bg-color-header;
+  @media (max-width : 1000px) {
+    @include flex($flexDirection:column,$alignItems:center, $gap : 25px);
+  }
+}
+
+.navbar {
+  @include flex($JustifyContent : center, $alignItems : center);
+
+  .navbar__link {
+
+    @include flex($JustifyContent : center, $gap : 70px);
+    .navbar__link--element{
+        @include flex($flexDirection : column, $aligntext : center, $gap : $Gap-Globale);
+    }
+  }
+}
+
+.navbar__souslink {
+    @include flex($flexDirection : column, $gap : $Gap-Globale);
+    .navbar__souslink--element{
+        @include flex($flexDirection : column, $gap : $Gap-Globale);
+    }
+}
+
+.logo{
+  img {
+    height: 100px;
+  }
+}

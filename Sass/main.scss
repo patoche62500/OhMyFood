@@ -1,0 +1,30 @@
+/*Base*/
+@import "Base/_reset.scss";
+@import "Base/_typography.scss";
+@import "Base/_fonts.scss";
+/*Utils*/
+@import "Utils/_variables.scss";
+@import "Utils/_functions.scss";
+@import "Utils/_mixins.scss";
+@import "Utils/_helpers.scss";
+@import "Utils/_placeholders.scss";
+/*Layout*/
+@import "Layout/_grid.scss";
+@import "Layout/_header.scss";
+@import "Layout/_footer.scss";
+@import "Layout/_navigation.scss";
+@import "Layout/section";
+/*Components*/
+@import "Components/_cards.scss";
+@import "Components/_animation.scss";
+/*Pages*/
+/*Themes*/
+/*Vendors*/
+
+main {
+  padding:50px;
+}
+
+a {
+  color: $color-globale;
+}

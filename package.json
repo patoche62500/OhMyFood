@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "sass": "sass -w sass/main.scss Assets/Css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.65.1"
+  },
+  "description": "npm run sass"
+
+}

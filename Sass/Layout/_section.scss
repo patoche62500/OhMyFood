@@ -1,0 +1,22 @@
+section {
+    padding: 50px;
+    height: 800px;
+    background-color: RandomColor();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containercards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: RandomColor();
+    padding: 50px;
+}
+
+.search {
+    display: none;
+}
