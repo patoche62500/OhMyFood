@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    padding: 22px 25px;
+    background-color: grey;
+
+    // Desktop
+    //flex-direction: row-reverse;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+    }
+    
+}
+

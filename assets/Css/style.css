@@ -9,12 +9,24 @@
   text-decoration: none;
 }
 
+.logo__titre {
+  font-family: "Shrikhand";
+}
+
+.texte {
+  font-family: "Roboto";
+}
+
 /*Utils*/
 /*Globale Variable*/
 /*Header Variable*/
+/* */
 /* Declaration des variables */
 :root {
   /*Globable*/
+  --ColorPrimaire:#9356DC;
+  --ColorSecondaire:#FF79DA;
+  --ColorTertiaire:#99E2D0;
   --colorColor: rgb(0, 0, 0);
   /* Header */
   --gap: 10px;
@@ -27,6 +39,7 @@
   --footerheight: 100px;
   --backgroundcolor: black;
   /* font */
+  --fonttexte:"roboto";
   --fontcolor: white;
   /* Border */
   --bordercolor: yellow;
@@ -40,18 +53,16 @@
 /*Layout*/
 header {
   display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 10px;
-  background-color: var(--bgheader);
-}
-@media (max-width: 1000px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  /*
+  @include flex($JustifyContent:center, $gap : 25px);
+  padding:10px;
+  //background-color: $bg-color-header;
+  @media (max-width : 1000px) {
+    @include flex($flexDirection:column,$alignItems:center, $gap : 25px);
   }
+  */
 }
 
 .navbar {
@@ -82,14 +93,40 @@ header {
   gap: Var(--gap);
 }
 
+.logo {
+  padding: 14px 89px;
+}
 .logo img {
-  height: 100px;
+  width: 197px;
+  height: 36px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 17px;
+  padding: 15px;
+  background-color: aquamarine;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: grey;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 section {
   padding: 50px;
   height: 800px;
-  background-color: rgb(69, 254, 197);
+  background-color: rgb(41, 29, 227);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +137,7 @@ section {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: rgb(100, 44, 34);
+  background-color: rgb(171, 24, 29);
   padding: 50px;
 }
 
@@ -110,7 +147,7 @@ section {
 
 /*Components*/
 .card {
-  background-color: rgb(84, 67, 175);
+  background-color: rgb(71, 250, 33);
   height: 50%;
   width: 200px;
   border-radius: 5px;
@@ -129,7 +166,7 @@ section {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  background-color: rgb(245, 112, 103);
+  background-color: rgb(3, 173, 123);
   height: 100%;
 }
 .card__element .card__image img {
@@ -161,11 +198,70 @@ section {
     transform: scale(2);
   }
 }
+.btn {
+  padding: 13px 16px;
+  background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
+  border-radius: 25px;
+  color: white;
+  border: 0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-family: "roboto";
+}
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+.btnhover {
+  padding: 13px 16px;
+  background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
+  border-radius: 25px;
+  color: white;
+  border: 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  font-family: "roboto";
+}
+
+.badge {
+  background-color: var(--ColorTertiaire);
+  color: #008766;
+  width: 80px;
+  padding: 7px 9px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.btnlike {
+  width: 20px;
+  height: 20px;
+  background: 0;
+  border: 0;
+}
+.btnlike:active .heartfull {
+  display: inline;
+}
+
+.btnlike i {
+  position: absolute;
+}
+
+.heartfull {
+  display: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
 /*Pages*/
 /*Themes*/
 /*Vendors*/
 main {
-  padding: 50px;
+  /*
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  //padding: 50px;
+  */
 }
 
 a {

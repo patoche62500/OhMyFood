@@ -1,10 +1,18 @@
 header {
+
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  //width: 100%;
+  /*
   @include flex($JustifyContent:center, $gap : 25px);
   padding:10px;
-  background-color: $bg-color-header;
+  //background-color: $bg-color-header;
   @media (max-width : 1000px) {
     @include flex($flexDirection:column,$alignItems:center, $gap : 25px);
   }
+  */
 }
 
 .navbar {
@@ -27,19 +35,21 @@ header {
 }
 
 .logo{
+
+  padding: 14px 89px;
   img {
-    height: 100px;
+    width: 197px;
+    height: 36px;
   }
+  
+  
 }
 
-.header {
-  height: rem(100);
-  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.16);
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 101;
-  @include min768() {
-    position: relative;
-  }
+.location {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 17px;
+padding: 15px;
+  background-color: aquamarine;
 }

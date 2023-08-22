@@ -17,12 +17,18 @@
 /*Components*/
 @import "Components/_cards.scss";
 @import "Components/_animation.scss";
+@import "Components/_button.scss";
 /*Pages*/
 /*Themes*/
 /*Vendors*/
 
 main {
-  padding:50px;
+  /*
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  //padding: 50px;
+  */
 }
 
 a {

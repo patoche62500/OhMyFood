@@ -3,11 +3,20 @@ $color-globale: var(--colorColor);
 /*Header Variable*/
 $bg-color-header: var(--bgheader);
 $Gap-Globale: Var(--gap);
+/* */
+$color-primaire:var(--ColorPrimaire);
+$color-secondaire: var(--ColorSecondaire);
+$color-tertiaire:var(--ColorTertiaire);
 
 /* Declaration des variables */
 :root {
   //#{$color-globale}
   /*Globable*/
+  --ColorPrimaire:#9356DC;
+  --ColorSecondaire:#FF79DA;
+  --ColorTertiaire:#99E2D0;
+
+
   --colorColor: rgb(0, 0, 0);
   /* Header */
   --gap: 10px;
@@ -24,6 +33,8 @@ $Gap-Globale: Var(--gap);
   --backgroundcolor: black;
 
   /* font */
+
+  --fonttexte:'roboto';
   --fontcolor: white;
 
   /* Border */
