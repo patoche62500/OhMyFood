@@ -378,7 +378,12 @@ header {
 /*Themes*/
 /*Vendors*/
 a {
-  color: var(--colorColor);
+  color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

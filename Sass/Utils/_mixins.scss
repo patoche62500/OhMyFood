@@ -38,3 +38,21 @@
     @content;
   }
 }
+//font function
+@mixin font(
+  $color: white,
+  $fontfamily: 'Roboto',
+  $fontsize: 16px,
+  $font-style: normal,
+  $font-weight: 500,
+  $line-height: normal,
+)
+{
+  color:$color;
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+
+}
