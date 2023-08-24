@@ -1,4 +1,4 @@
-section {
+/*section {
     padding: 50px;
     height: 800px;
     background-color: RandomColor();
@@ -19,4 +19,61 @@ section {
 
 .search {
     display: none;
+}
+*/
+
+.button {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+    gap: 20px;
+}
+
+.header__footer {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;  
+    gap: 50px;
+
+    H1 {
+        text-align: center;
+    }
+
+    
+}
+
+.cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:48px;
+    background-color: beige;
+
+    H1 {
+        text-align: center;
+    }
+}
+
+.entree {
+
+    width: 275px;
+    //padding: 48px 65px;
+    p {
+        font-size: 16px;
+        font-family: 'roboto';
+        font-weight: 300;
+        flex-shrink: 0;
+    }
+    
+    .line {
+        margin-right: 235px;
+        width: 40px;
+        border-bottom: 3px solid $color-tertiaire;
+    }
+    
+    
+   
 }

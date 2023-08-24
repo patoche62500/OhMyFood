@@ -12,57 +12,120 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@600&family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="Assets/Css/style.css" />
   </head>
   <main>
-    <header>
-      <div class="logo">
-        <img src="Assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
-      </div>
-      <div class="location">
-        <p>Icone</p>
-        <p>Localisation</p>
-      </div>
-    </header>
-
-    <div>
+    <header></header>
+    <section class="button">
+      <h1>Buttons</h1>
       <button class="btn" type="button">Explorez les menus</button>
-    </div>
-
-    <div>
       <button class="btnhover" type="button">Explorez les menus</button>
-    </div>
 
-    <p class="badge">Nouveau</p>
+      <p class="badge">Nouveau</p>
 
-    <button class="btnlike" type="button">
-      <i class="fa-regular fa-heart heartempty"></i>
-      <i class="fa-solid fa-heart heartfull"></i>
-    </button>
+      <button class="btnlike" type="button">
+        <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
+        <img src="Assets/images/vector/HeartFull.svg" alt="" />
+      </button>
 
-    <div>
-      <i class="fa-solid fa-arrow-left arrow"></i>
-    </div>
-
-    <footer>
       <div>
-        <p>OhMyFood</p>
+        <i class="fa-solid fa-arrow-left arrow"></i>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Lien_01</a></li>
-          <li><a href="#">Lien_02</a></li>
-          <li><a href="#">Lien_03</a></li>
-          <li><a href="#">Lien_04</a></li>
-        </ul>
-      </nav>
-    </footer>
+    </section>
+
+    <section class="header__footer">
+      <h1>Header & Footer</h1>
+
+      <div class="navbar">
+        <div class="arrow">
+          <img src="Assets/images/vector/GoBack.svg" alt="" />
+        </div>
+        <div class="logo">
+          <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="location">
+        <div>
+          <img
+            src="Assets/images/vector/PinLocation.svg"
+            alt="Pin de Location"
+          />
+        </div>
+
+        <p>New York, Brooklyn</p>
+      </div>
+      <div class="footer">
+        <div>
+          <p>OhMyFood</p>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="Assets/images/vector/FourchetteCouteau.svg" alt="" />
+                Lien_01
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="Assets/images/vector/Partenaire.svg" alt="" />
+                Lien_02</a
+              >
+            </li>
+            <li><a href="#">Lien_03</a></li>
+            <li><a href="#">Lien_04</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="cartes">
+      <h1>Cartes</h1>
+
+      <div class="entree">
+        <p>Entrée</p>
+        <div class="line"></div>
+      </div>
+      <!--Carte Non Hover Mobile-->
+      <article class="card">
+        <div class="card__content">
+          <div>
+            <p>titre</p>
+            <p>texte</p>
+          </div>
+          <p>Prix</p>
+        </div>
+      </article>
+      <!--Carte Hover Mobile-->
+      <article class="card">
+        <div class="card__content">
+          <div class="card__description">
+            <p>titre</p>
+            <p>texte</p>
+          </div>
+          <p>Prix</p>
+        </div>
+        <img src="Assets/images/vector/Select button.svg" alt="" />
+      </article>
+
+      <article class="card02">
+        <div class="card02__img">
+          <img
+            src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card02__description">
+          <div class="card02__text">
+            <p>titre</p>
+            <p>texte</p>
+          </div>
+          <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
+        </div>
+      </article>
+    </section>
+
+    <footer></footer>
   </main>
 </html>

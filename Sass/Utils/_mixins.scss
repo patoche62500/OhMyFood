@@ -27,8 +27,14 @@
   }
 }
 
-@mixin min1920() {
-  @media (min-width: 1920px) {
+@mixin min375() {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin max1440() {
+  @media (max-width: 1440px) {
     @content;
   }
 }

@@ -1,30 +1,58 @@
 .card {
-    background-color: RandomColor();
-    height: 50%;
-    width: 200px;
-    border-radius: 5px;
-    border: solid 5px black;
-    display: flex;
-   justify-content: center;
-   gap:10px;
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
 
-   a{
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
     width:100%;
-   }
-    
+  }
+
+  & img {
+    display: none;
+  }
+  
+  &:hover img{
+    display: inline;
+  }
+  
+
 }
 
-.card__element {
+.card02 {
+
+    background-color: azure;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap:10px;
-    padding:10px;
-    background-color: RandomColor();
-    height: 100%;
+    gap:16px;
+    border-radius: 15px;
 
-    .card__image img{
-        height: 100px;
+    &__description {
+        display: flex;
+        gap:13px;
+        align-items: center;
+        //justify-content: space-between;
+
+        & img {
+            padding-right: 25px;
+            padding-bottom: 33px;
+            padding-left: 293px;
+        }
     }
-}
 
+    &__text {
+        width: 100%;
+        padding-left: 13px;
+    }
+
+    &__img img{
+        border-radius: 15px 15px 0px 0px;
+        
+        width: 100%;
+    }
+    
+}

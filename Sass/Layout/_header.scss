@@ -15,18 +15,20 @@ header {
 }
 
 .navbar {
-  @include flex($JustifyContent: center, $alignItems: center);
 
-  .navbar__link {
-    @include flex($JustifyContent: center, $gap: 70px);
-    .navbar__link--element {
-      @include flex(
-        $flexDirection: column,
-        $aligntext: center,
-        $gap: $Gap-Globale
-      );
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap:42px;
+
+  @include min375() {
+    gap:572px;
+    padding-right: 672px;
   }
+
+  
+  
 }
 
 .navbar__souslink {
@@ -38,17 +40,19 @@ header {
 
 .logo {
   padding: 14px 89px;
+  /*
   img {
     width: 197px;
     height: 36px;
   }
+  */
 }
 
 .location {
   display: flex;
   justify-content: center;
-  width: 100%;
-  gap: 17px;
-  padding: 15px;
-  background-color: rgb(107, 107, 107);
+  align-items: center;
+  gap:17px;
+  background-color: #EAEAEA;
+  height: 50px;
 }
