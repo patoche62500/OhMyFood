@@ -14,22 +14,53 @@ header {
   */
 }
 
-.navbar {
+.headermobile{
+  width: 375px;
+  height: 63px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  gap:42px;
-
-  @include min375() {
-    gap:572px;
-    padding-right: 672px;
+  .navbar {
+    padding: 14px 89px 13px 17px; 
+    background-color: aquamarine;
+    //align-items: center;
+  
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+  
+      .logo img{
+        padding: 0px 19px 0px 16px; 
+      }
+    }
+    
   }
-
-  
-  
 }
+
+.headerdesktop {
+  max-width: 1440px;
+  height: 96px;
+
+  .navbar {
+    padding: 14px 89px 13px 17px; 
+    background-color: aquamarine;
+    //align-items: center;
+  
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+  
+      .logo {
+        display: flex;
+        width: 100%; 
+        justify-content: center;
+      }
+    }
+    
+  }
+}
+
+
 
 .navbar__souslink {
   @include flex($flexDirection: column, $gap: $Gap-Globale);
@@ -39,7 +70,7 @@ header {
 }
 
 .logo {
-  padding: 14px 89px;
+  //padding: 14px 89px;
   /*
   img {
     width: 197px;

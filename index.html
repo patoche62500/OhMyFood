@@ -35,14 +35,34 @@
 
     <section class="header__footer">
       <h1>Header & Footer</h1>
+      <div class="headermobile">
+        <nav class="navbar">
+          <ul>
+            <li class="back">
+              <img src="Assets/images/vector/GoBack.svg" alt="" />
+            </li>
 
-      <div class="navbar">
-        <div class="arrow">
-          <img src="Assets/images/vector/GoBack.svg" alt="" />
-        </div>
-        <div class="logo">
-          <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
-        </div>
+            <li class="logo">
+              <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="headerdesktop">
+
+        <nav class="navbar">
+          <ul>
+            <li class="back">
+              <img src="Assets/images/vector/GoBack.svg" alt="" />
+            </li>
+
+            <li class="logo">
+              <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
+            </li>
+          </ul>
+        </nav>
+        
       </div>
 
       <div class="location">
@@ -55,28 +75,61 @@
 
         <p>New York, Brooklyn</p>
       </div>
+      <!-- FOOTER -->
       <div class="footer">
-        <div>
-          <p>OhMyFood</p>
+        <div class="footermobile">
+          <div>
+            <p>OhMyFood</p>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="Assets/images/vector/FourchetteCouteau.svg"
+                    alt=""
+                  />
+                  Lien_01
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Assets/images/vector/Partenaire.svg" alt="" />
+                  Lien_02</a
+                >
+              </li>
+              <li><a href="#">Lien_03</a></li>
+              <li><a href="#">Lien_04</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="Assets/images/vector/FourchetteCouteau.svg" alt="" />
-                Lien_01
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="Assets/images/vector/Partenaire.svg" alt="" />
-                Lien_02</a
-              >
-            </li>
-            <li><a href="#">Lien_03</a></li>
-            <li><a href="#">Lien_04</a></li>
-          </ul>
-        </nav>
+
+        <div class="footerdesktop">
+          <div>
+            <p>OhMyFood</p>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="Assets/images/vector/FourchetteCouteau.svg"
+                    alt=""
+                  />
+                  Lien_01
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Assets/images/vector/Partenaire.svg" alt="" />
+                  Lien_02</a
+                >
+              </li>
+              <li><a href="#">Lien_03</a></li>
+              <li><a href="#">Lien_04</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </section>
 
@@ -108,22 +161,24 @@
         </div>
         <img src="Assets/images/vector/Select button.svg" alt="" />
       </article>
-
-      <article class="card02">
-        <div class="card02__img">
-          <img
-            src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt=""
-          />
-        </div>
-        <div class="card02__description">
-          <div class="card02__text">
-            <p>titre</p>
-            <p>texte</p>
+      <div class="cardmenu">
+        <article class="card02">
+          <div class="card02__img">
+            <img
+              src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt=""
+            />
+            <p class="badge">Nouveau</p>
           </div>
-          <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
-        </div>
-      </article>
+          <div class="card02__description">
+            <div class="card02__text">
+              <p>titre</p>
+              <p>texte</p>
+            </div>
+            <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
+          </div>
+        </article>
+      </div>
     </section>
 
     <footer></footer>

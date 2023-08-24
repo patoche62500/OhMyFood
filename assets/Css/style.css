@@ -65,18 +65,40 @@ header {
   */
 }
 
-.navbar {
+.headermobile {
+  width: 375px;
+  height: 63px;
+}
+.headermobile .navbar {
+  padding: 14px 89px 13px 17px;
+  background-color: aquamarine;
+}
+.headermobile .navbar ul {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: white;
   gap: 42px;
 }
-@media (min-width: 376px) {
-  .navbar {
-    gap: 572px;
-    padding-right: 672px;
-  }
+.headermobile .navbar ul .logo img {
+  padding: 0px 19px 0px 16px;
+}
+
+.headerdesktop {
+  max-width: 1440px;
+  height: 96px;
+}
+.headerdesktop .navbar {
+  padding: 14px 89px 13px 17px;
+  background-color: aquamarine;
+}
+.headerdesktop .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.headerdesktop .navbar ul .logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .navbar__souslink {
@@ -91,7 +113,6 @@ header {
 }
 
 .logo {
-  padding: 14px 89px;
   /*
   img {
     width: 197px;
@@ -112,14 +133,34 @@ header {
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 22px 25px;
-  background-color: grey;
-  width: 375px;
+  gap: 10px;
 }
-.footer ul {
+
+.footermobile {
+  width: 375px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+}
+.footermobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footerdesktop {
+  height: 114px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 30px 25px;
+}
+.footerdesktop ul {
+  display: flex;
   gap: 7px;
 }
 
@@ -223,19 +264,32 @@ header {
   display: flex;
   gap: 13px;
   align-items: center;
+  justify-content: center;
 }
 .card02__description img {
   padding-right: 25px;
-  padding-bottom: 33px;
-  padding-left: 293px;
 }
 .card02__text {
   width: 100%;
   padding-left: 13px;
 }
+.card02__img {
+  position: relative;
+}
+.card02__img .badge {
+  position: absolute;
+  top: 13px;
+  left: 248px;
+}
 .card02__img img {
   border-radius: 15px 15px 0px 0px;
   width: 100%;
+  height: 100%;
+}
+
+.cardmenu {
+  width: 340px;
+  height: 251px;
 }
 
 .testeanim {
@@ -323,15 +377,6 @@ header {
 /*Pages*/
 /*Themes*/
 /*Vendors*/
-main {
-  /*
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  */
-}
-
 a {
   color: var(--colorColor);
 }
