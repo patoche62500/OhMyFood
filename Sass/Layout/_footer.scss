@@ -1,8 +1,18 @@
-.footer {
+footer {
+  width: 375px;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  //align-items: center;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+  }
 }
 
 .footermobile {

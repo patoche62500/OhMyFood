@@ -66,17 +66,24 @@ header {
 }
 
 .headermobile {
-  width: 375px;
-  height: 63px;
+  width: 100%;
 }
 .headermobile .navbar {
   padding: 14px 89px 13px 17px;
-  background-color: aquamarine;
 }
 .headermobile .navbar ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 42px;
+}
+.headermobile .navbar ul .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.headermobile .navbar ul .back {
+  opacity: 1;
 }
 .headermobile .navbar ul .logo img {
   padding: 0px 19px 0px 16px;
@@ -128,12 +135,21 @@ header {
   gap: 17px;
   background-color: #EAEAEA;
   height: 50px;
+  width: 100%;
 }
 
-.footer {
+footer {
+  width: 375px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .footermobile {
@@ -232,6 +248,24 @@ header {
   border-bottom: 3px solid var(--ColorTertiaire);
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+
+.fonctionnement {
+  padding: 20px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+}
+
 /*Components*/
 .card {
   display: flex;
@@ -254,7 +288,9 @@ header {
 }
 
 .card02 {
-  background-color: azure;
+  background: #fff;
+  /* Shadow/Card */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -265,6 +301,7 @@ header {
   gap: 13px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 12px;
 }
 .card02__description img {
   padding-right: 25px;

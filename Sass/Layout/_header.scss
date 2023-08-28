@@ -15,18 +15,31 @@ header {
 }
 
 .headermobile{
-  width: 375px;
-  height: 63px;
-
+  //width: 375px;
+  //height: 63px;
+  width: 100%;
   .navbar {
+    //display: flex;
     padding: 14px 89px 13px 17px; 
-    background-color: aquamarine;
+    //background-color: aquamarine;
     //align-items: center;
   
     ul {
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 42px;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        
+        width: 100%;
+      }
+
+      .back {
+        opacity: 1;
+      }
   
       .logo img{
         padding: 0px 19px 0px 16px; 
@@ -86,4 +99,5 @@ header {
   gap:17px;
   background-color: #EAEAEA;
   height: 50px;
+  width: 100%;
 }
