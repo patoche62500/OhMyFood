@@ -1,5 +1,5 @@
 .btn {
-  padding: 13px 16px;
+  //padding: 13px 16px;
   background: linear-gradient($color-secondaire, $color-primaire);
   border-radius: 25px;
   color: white;
@@ -9,50 +9,50 @@
 
   font-family: "roboto";
 
+  &__text {
+    padding: 13px 16px;
+  }
+
+  transition-duration: 2s;
+
   &:hover {
     box-shadow: 0px 4px 15px 0px #00000059;
   }
 }
 
-.btnhover {
-  padding: 13px 16px;
-  background: linear-gradient($color-secondaire, $color-primaire);
-  border-radius: 25px;
-  color: white;
-  border: 0;
-  box-shadow: 0px 4px 15px 0px #00000059;
-  font-family: "roboto";
-}
-
 .badge {
   background-color: $color-tertiaire;
   color: #008766;
-  //box-shadow: 0px 2px 4px 0px rgba($color: #000000, $alpha: 2.25%);
   width: 80px;
   padding: 7px 9px;
   box-shadow: 0px 2px 4px 0px #00000026;
-}
-
-.badge__hidden {
-  background-color: $color-tertiaire;
-  color: #008766;
-  //box-shadow: 0px 2px 4px 0px rgba($color: #000000, $alpha: 2.25%);
-  width: 80px;
-  padding: 7px 9px;
-  box-shadow: 0px 2px 4px 0px #00000026;
-  opacity: 0;
 }
 
 .btnlike {
+  display: flex;
+  justify-content: center;
   width: 20px;
   height: 20px;
   background: 0;
   border: 0;
 
-  &:active .heartfull {
-    display: inline;
+  position: relative;
+  animation: PlayLike 2s linear infinite paused;
 
-    //background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  .HeartFull {
+    position: absolute;
+    display: none;
+  }
+
+  .HeartEmpty {
+    position: absolute;
+  }
+
+  &:hover {
+    .HeartFull {
+      animation-play-state: running;
+      //display: inline;
+    }
   }
 }
 
@@ -79,11 +79,11 @@
   padding: 28px;
   gap: 62px;
   border: 0;
-  /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  @include font(black, "Roboto", 16px, normal, 500, normal);
 
-  .numero {
+  &__numero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +94,4 @@
     width: 24px;
     height: 24px;
   }
-
-  @include font(black, "Roboto", 16px, normal, 500, normal);
 }

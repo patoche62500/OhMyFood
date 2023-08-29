@@ -1,4 +1,5 @@
 header {
+
   .navbar {
     padding: 14px 89px 13px 17px;
 
@@ -13,6 +14,11 @@ header {
         justify-content: center;
 
         width: 100%;
+
+        img {
+          padding: 0px 19px 0px 16px;
+        }
+        
       }
 
       .back {
@@ -20,14 +26,11 @@ header {
         opacity: 0;
       }
 
-      .logo img {
-        padding: 0px 19px 0px 16px;
-      }
     }
   }
 }
 
-.headermobile {
+.header-mobile {
   //width: 375px;
   //height: 63px;
   width: 100%;

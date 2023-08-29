@@ -34,17 +34,30 @@
     display: flex;
     gap: 13px;
     align-items: center;
-    //justify-content: space-between;
     justify-content: center;
     padding-bottom: 12px;
 
-    & img {
-      padding-right: 25px;
+    & img,
+    .btnlike {
+      padding-right: 33px;
       //padding-bottom: 33px;
+     
+
+    }
+
+    & svg {
+      //
+      fill: url('/Assets/images/vector/HeartFull.svg');
+      &:hover{
+        fill: url('/Assets/images/vector/HeartFull.svg');
+      }
     }
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
     width: 100%;
     padding-left: 13px;
 
@@ -60,11 +73,10 @@
   &__img {
     position: relative;
 
-    .badge,
-    .badge__hidden {
+    .badge{
       position: absolute;
       top: 13px;
-      left: 248px;
+      right: 15px;
     }
 
     img {

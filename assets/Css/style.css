@@ -65,35 +65,35 @@ header .navbar ul .logo {
   justify-content: center;
   width: 100%;
 }
+header .navbar ul .logo img {
+  padding: 0px 19px 0px 16px;
+}
 header .navbar ul .back {
   padding-left: 17px;
   opacity: 0;
 }
-header .navbar ul .logo img {
-  padding: 0px 19px 0px 16px;
-}
 
-.headermobile {
+.header-mobile {
   width: 100%;
 }
-.headermobile .navbar {
+.header-mobile .navbar {
   padding: 14px 89px 13px 17px;
 }
-.headermobile .navbar ul {
+.header-mobile .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 42px;
 }
-.headermobile .navbar ul .logo {
+.header-mobile .navbar ul .logo {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.headermobile .navbar ul .back {
+.header-mobile .navbar ul .back {
   opacity: 1;
 }
-.headermobile .navbar ul .logo img {
+.header-mobile .navbar ul .logo img {
   padding: 0px 19px 0px 16px;
 }
 
@@ -268,7 +268,7 @@ footer ul {
   padding-left: 12.51px;
 }
 
-.restaurants {
+.restaurant {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -315,10 +315,20 @@ footer ul {
   justify-content: center;
   padding-bottom: 12px;
 }
-.card02__description img {
-  padding-right: 25px;
+.card02__description img,
+.card02__description .btnlike {
+  padding-right: 33px;
+}
+.card02__description svg {
+  fill: url("/Assets/images/vector/HeartFull.svg");
+}
+.card02__description svg:hover {
+  fill: url("/Assets/images/vector/HeartFull.svg");
 }
 .card02__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 100%;
   padding-left: 13px;
 }
@@ -341,11 +351,10 @@ footer ul {
 .card02__img {
   position: relative;
 }
-.card02__img .badge,
-.card02__img .badge__hidden {
+.card02__img .badge {
   position: absolute;
   top: 13px;
-  left: 248px;
+  right: 15px;
 }
 .card02__img img {
   border-radius: 15px 15px 0px 0px;
@@ -360,52 +369,25 @@ footer ul {
   height: 251px;
 }
 
-.testeanim {
-  border-radius: 100%;
-  border: 3px black solid;
-  animation: animationrotation_01 10s linear infinite;
-}
-
-@keyframes animationrotation_01 {
-  from {
-    transform: rotate(0deg) scale(0.1);
-    translate: 1000px 500px;
-    box-shadow: 0 0 50px black;
-  }
+@keyframes PlayLike {
   to {
-    transform: rotate(360deg) scale(1);
-    box-shadow: 0 0 50px rgb(57, 255, 8);
-  }
-}
-@keyframes animationrotation_02 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(2);
+    display: inline;
   }
 }
 .btn {
-  padding: 13px 16px;
   background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
   border-radius: 25px;
   color: white;
   border: 0;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   font-family: "roboto";
+  transition-duration: 2s;
+}
+.btn__text {
+  padding: 13px 16px;
 }
 .btn:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-}
-
-.btnhover {
-  padding: 13px 16px;
-  background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
-  border-radius: 25px;
-  color: white;
-  border: 0;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-  font-family: "roboto";
 }
 
 .badge {
@@ -416,23 +398,25 @@ footer ul {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
-.badge__hidden {
-  background-color: var(--ColorTertiaire);
-  color: #008766;
-  width: 80px;
-  padding: 7px 9px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  opacity: 0;
-}
-
 .btnlike {
+  display: flex;
+  justify-content: center;
   width: 20px;
   height: 20px;
   background: 0;
   border: 0;
+  position: relative;
+  animation: PlayLike 2s linear infinite paused;
 }
-.btnlike:active .heartfull {
-  display: inline;
+.btnlike .HeartFull {
+  position: absolute;
+  display: none;
+}
+.btnlike .HeartEmpty {
+  position: absolute;
+}
+.btnlike:hover .HeartFull {
+  animation-play-state: running;
 }
 
 .btnlike i {
@@ -458,7 +442,6 @@ footer ul {
   padding: 28px;
   gap: 62px;
   border: 0;
-  /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   color: black;
@@ -468,7 +451,7 @@ footer ul {
   font-weight: 500;
   line-height: normal;
 }
-.btn__fonctionnement .numero {
+.btn__fonctionnement__numero {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -20,7 +20,18 @@
       <nav class="navbar">
         <ul>
           <li class="back">
-            <img src="Assets/images/vector/GoBack.svg" alt="" />
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z"
+                fill="#353535"
+              />
+            </svg>
           </li>
 
           <li class="logo">
@@ -46,41 +57,53 @@
       <h3>
         Découvrez des restaurants d'exception, sélectionnés par nos soins.
       </h3>
-      <button class="btn" type="button">Explorez nos restaurants</button>
+
+      <div class="btn">
+      <a  href="#linkrestaurant">
+        <p class="btn__text">Explorez nos restaurants</p>
+      </a>
+      </div>
+      
     </section>
 
     <section class="fonctionnement">
       <h2>Fonctionnement</h2>
 
-      <div class="container__btn">
-        <button class="btn__fonctionnement">
-          <span class="btn__fonctionnement__numero">1</span>
-          <div>
+      <div >
+
+        <ul class="btn__container">
+
+          <li  class="btn__fonctionnement">
+
+            <p class="btn__fonctionnement__numero">1</p>
             <img src="Assets/images/vector/mobile-screen-button.svg" alt="" />
-          </div>
-          <span>Choisissez un restaurant</span>
+            <p>Choisissez un restaurant</p>
 
-        </button>
+          </li>
+          <li  class="btn__fonctionnement">
 
-        <button class="btn__fonctionnement">
-          <p class="numero">2</p>
-          <div>
-            <img src="Assets/images/vector/list-ul.svg" alt="" />
-          </div>
-          Composez votre menu
-        </button>
+            <p class="btn__fonctionnement__numero">2</p>
 
-        <button class="btn__fonctionnement">
-          <p class="numero">3</p>
-          <div>
+          <img src="Assets/images/vector/list-ul.svg" alt="" />
+
+          <p>Composez votre menu</p>
+
+          </li>
+          <li  class="btn__fonctionnement">
+
+            <p class="btn__fonctionnement__numero">3</p>
+
             <img src="Assets/images/vector/store.svg" alt="" />
-          </div>
-          Dégustez au restaurant
-        </button>
-      </div>
+  
+            <p>Dégustez au restaurant</p>
+
+          </li>
+        </ul>
+
     </section>
 
-    <section class="restaurants">
+    <section class="restaurant" id="linkrestaurant">
+
       <h2>Restaurants</h2>
 
       <article class="card02">
@@ -96,7 +119,11 @@
             <p class="card02__text--titre">La palette du goût</p>
             <p class="card02__text--description">Ménilmontant</p>
           </div>
-          <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
+         
+          <div class="btnlike">
+            <img class="HeartEmpty" src="Assets/images/vector/HeartEmpty.svg" alt="" />
+            <img class="HeartFull" src="Assets/images/vector/HeartFull.svg" alt="">
+          </div>
         </div>
       </article>
       <article class="card02">
@@ -121,7 +148,6 @@
             src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt=""
           />
-          <p class="badge__hidden">Nouveau</p>
         </div>
         <div class="card02__description">
           <div class="card02__text">
@@ -137,7 +163,6 @@
             src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt=""
           />
-          <p class="badge__hidden">Nouveau</p>
         </div>
         <div class="card02__description">
           <div class="card02__text">

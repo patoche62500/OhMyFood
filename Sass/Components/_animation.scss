@@ -1,37 +1,7 @@
-.testeanim {
-    border-radius: 100%;
-    border: 3px black solid;
-    animation:animationrotation_01 10s linear infinite;
-    //animation:animationrotation_02 10s linear infinite;
-}
-
-
-@keyframes animationrotation_01{
-    from {
-        
-        
-        transform:  rotate(0deg) scale(0.1);
-        translate: 1000px 500px;
-        
-        box-shadow: 0 0 50px black;
-       
-    }
-    to {
-      
-        
-        transform: rotate(360deg) scale(1);
-        box-shadow: 0 0 50px rgb(57, 255, 8);
-        
-        
-    }
-}
-
-@keyframes animationrotation_02{
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(2);
-    }
+@keyframes PlayLike {
+  from {
+  }
+  to {
+    display: inline;
+  }
 }
