@@ -4,18 +4,17 @@ $color-globale: var(--colorColor);
 $bg-color-header: var(--bgheader);
 $Gap-Globale: Var(--gap);
 /* */
-$color-primaire:var(--ColorPrimaire);
+$color-primaire: var(--ColorPrimaire);
 $color-secondaire: var(--ColorSecondaire);
-$color-tertiaire:var(--ColorTertiaire);
+$color-tertiaire: var(--ColorTertiaire);
 
 /* Declaration des variables */
 :root {
-  //#{$color-globale}
-  /*Globable*/
-  --ColorPrimaire:#9356DC;
-  --ColorSecondaire:#FF79DA;
-  --ColorTertiaire:#99E2D0;
-
+  // Color //
+  /* Globable */
+  --ColorPrimaire: #9356dc;
+  --ColorSecondaire: #ff79da;
+  --ColorTertiaire: #99e2d0;
 
   --colorColor: rgb(0, 0, 0);
   /* Header */
@@ -34,7 +33,7 @@ $color-tertiaire:var(--ColorTertiaire);
 
   /* font */
 
-  --fonttexte:'roboto';
+  --fonttexte: "roboto";
   --fontcolor: white;
 
   /* Border */

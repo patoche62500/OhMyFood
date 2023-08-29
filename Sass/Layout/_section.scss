@@ -1,97 +1,101 @@
-/*section {
-    padding: 50px;
-    height: 800px;
-    background-color: RandomColor();
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.containercards {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: RandomColor();
-    padding: 50px;
-}
-
-.search {
-    display: none;
-}
-*/
-
 .button {
-    border: 5px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:50px;
-    gap: 20px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
 }
 
 .header__footer {
-    border: 5px solid black;
-    display: flex;
-    flex-direction: column;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
 
-    gap: 50px;
+  gap: 50px;
 
-    H1 {
-        text-align: center;
-    }
-
-    
+  H1 {
+    text-align: center;
+  }
 }
 
 .cartes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:48px;
-    background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background-color: beige;
 
-    H1 {
-        text-align: center;
-    }
+  H1 {
+    text-align: center;
+  }
 }
 
 .entree {
+  width: 275px;
+  //padding: 48px 65px;
+  p {
+    font-size: 16px;
+    font-family: "roboto";
+    font-weight: 300;
+    flex-shrink: 0;
+  }
 
-    width: 275px;
-    //padding: 48px 65px;
-    p {
-        font-size: 16px;
-        font-family: 'roboto';
-        font-weight: 300;
-        flex-shrink: 0;
-    }
-    
-    .line {
-        margin-right: 235px;
-        width: 40px;
-        border-bottom: 3px solid $color-tertiaire;
-    }
-    
-    
-   
+  .line {
+    margin-right: 235px;
+    width: 40px;
+    border-bottom: 3px solid $color-tertiaire;
+  }
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:27px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 57px;
+  gap: 27px;
+  H1 {
+    text-align: center;
+    padding-left: 42px;
+    padding-right: 58px;
+    @include font(black, "Roboto", 24px, normal, 700, normal);
+  }
+
+  H3 {
+    text-align: center;
+    @include font(#353535, "Roboto", 18px, normal, 300, normal);
+    padding-left: 34px;
+    padding-right: 26px;
+  }
 }
 
 .fonctionnement {
-    padding:20px;
+  h2 {
+    margin-bottom: 26px;
+  }
+
+  .container__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 24.92px;
+    padding-left: 12.51px;
+  }
+  padding-right: 20px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  padding-left: 20px;
+
 }
 
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    gap:18px;
-    padding:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  padding-top: 54px;
+  padding-bottom: 66px;
+  background-color: #f6f6f6;
 }

@@ -1,29 +1,7 @@
 header {
-  display: flex;
-  flex-direction: column;
-  //justify-content: center;
-  align-items: center;
-  //width: 100%;
-  /*
-  @include flex($JustifyContent:center, $gap : 25px);
-  padding:10px;
-  //background-color: $bg-color-header;
-  @media (max-width : 1000px) {
-    @include flex($flexDirection:column,$alignItems:center, $gap : 25px);
-  }
-  */
-}
-
-.headermobile{
-  //width: 375px;
-  //height: 63px;
-  width: 100%;
   .navbar {
-    //display: flex;
-    padding: 14px 89px 13px 17px; 
-    //background-color: aquamarine;
-    //align-items: center;
-  
+    padding: 14px 89px 13px 17px;
+
     ul {
       display: flex;
       justify-content: center;
@@ -33,19 +11,53 @@ header {
       .logo {
         display: flex;
         justify-content: center;
-        
+
+        width: 100%;
+      }
+
+      .back {
+        padding-left: 17px;
+        opacity: 0;
+      }
+
+      .logo img {
+        padding: 0px 19px 0px 16px;
+      }
+    }
+  }
+}
+
+.headermobile {
+  //width: 375px;
+  //height: 63px;
+  width: 100%;
+  .navbar {
+    //display: flex;
+    padding: 14px 89px 13px 17px;
+    //background-color: aquamarine;
+    //align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 42px;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+
         width: 100%;
       }
 
       .back {
         opacity: 1;
       }
-  
-      .logo img{
-        padding: 0px 19px 0px 16px; 
+
+      .logo img {
+        padding: 0px 19px 0px 16px;
       }
     }
-    
   }
 }
 
@@ -54,50 +66,30 @@ header {
   height: 96px;
 
   .navbar {
-    padding: 14px 89px 13px 17px; 
+    padding: 14px 89px 13px 17px;
     background-color: aquamarine;
     //align-items: center;
-  
+
     ul {
       display: flex;
       align-items: center;
       gap: 42px;
-  
+
       .logo {
         display: flex;
-        width: 100%; 
+        width: 100%;
         justify-content: center;
       }
     }
-    
   }
-}
-
-
-
-.navbar__souslink {
-  @include flex($flexDirection: column, $gap: $Gap-Globale);
-  .navbar__souslink--element {
-    @include flex($flexDirection: column, $gap: $Gap-Globale);
-  }
-}
-
-.logo {
-  //padding: 14px 89px;
-  /*
-  img {
-    width: 197px;
-    height: 36px;
-  }
-  */
 }
 
 .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:17px;
-  background-color: #EAEAEA;
+  gap: 17px;
+  background-color: #eaeaea;
   height: 50px;
   width: 100%;
 }

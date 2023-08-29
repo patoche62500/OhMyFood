@@ -23,10 +23,9 @@
 /*Vendors*/
 
 main {
- 
 }
 
 a {
   //color: $color-globale;
-  @include font (white,'Roboto',16px,normal,500,normal)
+  @include font(white, "Roboto", 16px, normal, 500, normal);
 }

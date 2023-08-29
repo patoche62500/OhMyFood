@@ -47,12 +47,21 @@
   &__text {
     width: 100%;
     padding-left: 13px;
+
+    &--titre {
+      @include font(black, "Roboto", 18px, normal, 700, normal);
+    }
+
+    &--description {
+      @include font(black, "Roboto", 17px, normal, 300, normal);
+    }
   }
 
   &__img {
     position: relative;
 
-    .badge {
+    .badge,
+    .badge__hidden {
       position: absolute;
       top: 13px;
       left: 248px;
@@ -60,10 +69,10 @@
 
     img {
       border-radius: 15px 15px 0px 0px;
-
+      object-fit: cover;
       width: 100%;
       height: 100%;
-      //height: 231px;
+      height: 174px;
     }
   }
 }

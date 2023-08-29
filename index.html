@@ -16,19 +16,17 @@
   </head>
   <main>
     <header>
-      <div class="headermobile">
-        <nav class="navbar">
-          <ul>
-            <li class="back">
-              <img src="Assets/images/vector/GoBack.svg" alt="" />
-            </li>
+      <nav class="navbar">
+        <ul>
+          <li class="back">
+            <img src="Assets/images/vector/GoBack.svg" alt="" />
+          </li>
 
-            <li class="logo">
-              <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
-            </li>
-          </ul>
-        </nav>
-      </div>
+          <li class="logo">
+            <img src="Assets/images/logo/ohmyfood@2x.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
 
       <div class="location">
         <div>
@@ -38,7 +36,7 @@
           />
         </div>
 
-        <p>New York, Brooklyn</p>
+        <p>Paris, Belleville</p>
       </div>
     </header>
 
@@ -52,6 +50,32 @@
 
     <section class="fonctionnement">
       <h2>Fonctionnement</h2>
+
+      <div class="container__btn">
+        <button class="btn__fonctionnement">
+          <p class="numero">1</p>
+          <div>
+            <img src="Assets/images/vector/mobile-screen-button.svg" alt="" />
+          </div>
+          <p>Choisissez un restaurant</p>
+        </button>
+
+        <button class="btn__fonctionnement">
+          <p class="numero">2</p>
+          <div>
+            <img src="Assets/images/vector/list-ul.svg" alt="" />
+          </div>
+          <p>Composez votre menu</p>
+        </button>
+
+        <button class="btn__fonctionnement">
+          <p class="numero">3</p>
+          <div>
+            <img src="Assets/images/vector/store.svg" alt="" />
+          </div>
+          <p>Dégustez au restaurant</p>
+        </button>
+      </div>
     </section>
 
     <section class="restaurants">
@@ -60,17 +84,33 @@
       <article class="card02">
         <div class="card02__img">
           <img
-            src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt=""
           />
           <p class="badge">Nouveau</p>
         </div>
         <div class="card02__description">
           <div class="card02__text">
-            <p>titre</p>
-            <p>texte</p>
+            <p class="card02__text--titre">La palette du goût</p>
+            <p class="card02__text--description">Ménilmontant</p>
           </div>
           <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
+        </div>
+      </article>
+      <article class="card02">
+        <div class="card02__img">
+          <img
+            src="Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            alt=""
+          />
+          <p class="badge">Nouveau</p>
+        </div>
+        <div class="card02__description">
+          <div class="card02__text">
+            <p class="card02__text--titre">La note enchantée</p>
+            <p class="card02__text--description">Charonne</p>
+          </div>
+          <img src="Assets/images/vector/HeartFull.svg" alt="" />
         </div>
       </article>
       <article class="card02">
@@ -79,12 +119,12 @@
             src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt=""
           />
-          <p class="badge">Nouveau</p>
+          <p class="badge__hidden">Nouveau</p>
         </div>
         <div class="card02__description">
           <div class="card02__text">
-            <p>titre</p>
-            <p>texte</p>
+            <p class="card02__text--titre">à la française</p>
+            <p class="card02__text--description">Cité Rouge</p>
           </div>
           <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
         </div>
@@ -92,31 +132,15 @@
       <article class="card02">
         <div class="card02__img">
           <img
-            src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt=""
           />
-          <p class="badge">Nouveau</p>
+          <p class="badge__hidden">Nouveau</p>
         </div>
         <div class="card02__description">
           <div class="card02__text">
-            <p>titre</p>
-            <p>texte</p>
-          </div>
-          <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
-        </div>
-      </article>
-      <article class="card02">
-        <div class="card02__img">
-          <img
-            src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt=""
-          />
-          <p class="badge">Nouveau</p>
-        </div>
-        <div class="card02__description">
-          <div class="card02__text">
-            <p>titre</p>
-            <p>texte</p>
+            <p class="card02__text--titre">Le délice des sens</p>
+            <p class="card02__text--description">Folie-Méricout</p>
           </div>
           <img src="Assets/images/vector/HeartEmpty.svg" alt="" />
         </div>
@@ -125,7 +149,7 @@
 
     <footer>
       <div>
-        <p>OhMyFood</p>
+        <p class="logo__txt">OhMyFood</p>
       </div>
       <nav>
         <ul>
