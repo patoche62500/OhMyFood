@@ -147,6 +147,23 @@ footer ul {
   flex-direction: column;
   gap: 7px;
 }
+@media (min-width: 376px) {
+  footer {
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 30px 25px;
+    align-items: center;
+  }
+  footer ul {
+    flex-direction: row;
+    color: white;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
 
 .footermobile {
   width: 375px;
@@ -267,6 +284,16 @@ footer ul {
   gap: 24.92px;
   padding-left: 12.51px;
 }
+@media (min-width: 376px) {
+  .fonctionnement .btn__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fonctionnement .btn__container .btn__fonctionnement {
+    max-width: 322.486px;
+  }
+}
 
 .restaurant {
   display: flex;
@@ -276,6 +303,22 @@ footer ul {
   padding-top: 54px;
   padding-bottom: 66px;
   background-color: #f6f6f6;
+}
+.restaurant .card02__container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 376px) {
+  .restaurant .card02__container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .restaurant .card02__container .card02 {
+    width: 100%;
+    max-width: 490px;
+  }
 }
 
 /*Components*/

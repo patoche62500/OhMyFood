@@ -14,8 +14,23 @@ footer {
   ul {
     display: flex;
     flex-direction: column;
-
     gap: 7px;
+  }
+
+  @include min375(){
+    &{
+      flex-direction:row-reverse;
+      width: 100%;
+      padding: 30px 25px;
+      align-items: center;
+      
+      
+      ul {
+        flex-direction: row;
+        @include font(white, "Roboto", 16px, normal, 500, normal);
+      }
+    }
+
   }
 }
 
