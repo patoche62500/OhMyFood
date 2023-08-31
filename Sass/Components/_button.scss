@@ -37,22 +37,47 @@
   border: 0;
 
   position: relative;
-  animation: PlayLike 2s linear infinite paused;
+  //animation-name: PlayLake;
+  //animation-duration: 2s;
 
   .HeartFull {
     position: absolute;
-    display: none;
+    //display: none;
   }
 
   .HeartEmpty {
     position: absolute;
   }
+}
 
-  &:hover {
-    .HeartFull {
-      animation-play-state: running;
-      //display: inline;
-    }
+.btn__02 {
+  padding-right: 33px;
+
+  svg > path {
+    fill: none;
+    stroke: #101010;
+    padding-right: 33px;
+    animation: heartlike 100ms linear infinite paused;
+    animation-direction: alternate;
+  }
+
+  &:active svg > path {
+    animation-play-state: running;
+  }
+}
+
+.btn__03 {
+  padding-right: 33px;
+  svg > path {
+    fill: none;
+    stroke: #101010;
+   
+    animation: heartlike 100ms linear infinite paused;
+    animation-direction: alternate-reverse;
+  }
+
+  &:active svg > path {
+    animation-play-state: running;
   }
 }
 

@@ -261,7 +261,7 @@ footer ul {
 .fonctionnement h2 {
   margin-bottom: 26px;
 }
-.fonctionnement .container__btn {
+.fonctionnement .btn__container {
   display: flex;
   flex-direction: column;
   gap: 24.92px;
@@ -292,9 +292,6 @@ footer ul {
   padding: 15px;
   width: 100%;
 }
-.card img {
-  display: none;
-}
 .card:hover img {
   display: inline;
 }
@@ -318,12 +315,6 @@ footer ul {
 .card02__description img,
 .card02__description .btnlike {
   padding-right: 33px;
-}
-.card02__description svg {
-  fill: url("/Assets/images/vector/HeartFull.svg");
-}
-.card02__description svg:hover {
-  fill: url("/Assets/images/vector/HeartFull.svg");
 }
 .card02__text {
   display: flex;
@@ -369,9 +360,14 @@ footer ul {
   height: 251px;
 }
 
-@keyframes PlayLike {
-  to {
-    display: inline;
+@keyframes heartlike {
+  0% {
+    fill: none;
+    stroke: #101010;
+  }
+  100% {
+    fill: url("#paint0_linear_25368_712");
+    stroke: none;
   }
 }
 .btn {
@@ -406,16 +402,38 @@ footer ul {
   background: 0;
   border: 0;
   position: relative;
-  animation: PlayLike 2s linear infinite paused;
 }
 .btnlike .HeartFull {
   position: absolute;
-  display: none;
 }
 .btnlike .HeartEmpty {
   position: absolute;
 }
-.btnlike:hover .HeartFull {
+
+.btn__02 {
+  padding-right: 33px;
+}
+.btn__02 svg > path {
+  fill: none;
+  stroke: #101010;
+  padding-right: 33px;
+  animation: heartlike 100ms linear infinite paused;
+  animation-direction: alternate;
+}
+.btn__02:active svg > path {
+  animation-play-state: running;
+}
+
+.btn__03 {
+  padding-right: 33px;
+}
+.btn__03 svg > path {
+  fill: none;
+  stroke: #101010;
+  animation: heartlike 100ms linear infinite paused;
+  animation-direction: alternate-reverse;
+}
+.btn__03:active svg > path {
   animation-play-state: running;
 }
 

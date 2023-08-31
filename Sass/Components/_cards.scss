@@ -12,10 +12,6 @@
     width: 100%;
   }
 
-  & img {
-    display: none;
-  }
-
   &:hover img {
     display: inline;
   }
@@ -40,24 +36,13 @@
     & img,
     .btnlike {
       padding-right: 33px;
-      //padding-bottom: 33px;
-     
-
-    }
-
-    & svg {
-      //
-      fill: url('/Assets/images/vector/HeartFull.svg');
-      &:hover{
-        fill: url('/Assets/images/vector/HeartFull.svg');
-      }
     }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap: 5px;
     width: 100%;
     padding-left: 13px;
 
@@ -73,7 +58,7 @@
   &__img {
     position: relative;
 
-    .badge{
+    .badge {
       position: absolute;
       top: 13px;
       right: 15px;

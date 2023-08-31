@@ -1,7 +1,11 @@
-@keyframes PlayLike {
-  from {
+
+@keyframes heartlike {
+  0%{
+    fill: none;
+    stroke : #101010;
   }
-  to {
-    display: inline;
+  100% {
+    fill: url("#paint0_linear_25368_712");
+    stroke: none;
   }
 }
