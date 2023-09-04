@@ -27,17 +27,6 @@
   }
 }
 
-@mixin min375() {
-  @media (min-width: 376px) {
-    @content;
-  }
-}
-
-@mixin max1440() {
-  @media (max-width: 1440px) {
-    @content;
-  }
-}
 //font function
 @mixin font(
   $color: white,
@@ -55,4 +44,23 @@
   font-weight: $font-weight;
   line-height: $line-height;
 
+}
+
+//Responsive Fonction
+@mixin min375() {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin medium1000() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin max1440() {
+  @media (max-width: 1440px) {
+    @content;
+  }
 }
