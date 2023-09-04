@@ -91,10 +91,16 @@
   padding-left: 20px;
 
   @include min375() {
+
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 180px;
+
     .btn__container {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
+      //justify-content: center;
 
       .btn__fonctionnement {
         max-width: 322.486px;
@@ -112,19 +118,25 @@
   padding-bottom: 66px;
   background-color: #f6f6f6;
 
+  @include min375() {
+    padding-left: 180px;
+    padding-right: 180px;
+    gap:28px;
+  }
+
   .card02__container {
     display: flex;
     flex-direction: column;
+    gap:18px;
 
     @include min375() {
       & {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
-        gap:50px;
-        
+        justify-content: space-between;
+        gap: 50px;
       }
-  
+
       .card02 {
         width: 100%;
         max-width: 490px;
@@ -132,5 +144,3 @@
     }
   }
 }
-
-
