@@ -5,6 +5,8 @@
   $alignItems: stretch,
   $aligncontent: normal,
   $gap: 0px,
+  $gaprow: 0px,
+  $gapcolumn: 0px,
   $aligntext: left
 ) {
   display: flex;
@@ -23,6 +25,12 @@
   @if $gap != 0px {
     gap: $gap;
   }
+  @if $gaprow != 0px {
+    row-gap: $gaprow;
+  }
+  @if $gapcolumn != 0px {
+    column-gap: $gapcolumn;
+  }
   @if $aligntext != left {
     text-align: $aligntext;
   }
@@ -33,12 +41,13 @@
 
 //font function
 @mixin font(
-  $color: white,
+  $color: rgb(0, 0, 0),
   $fontfamily: "Roboto",
   $fontsize: 16px,
   $font-style: normal,
   $font-weight: 500,
-  $line-height: normal
+  $line-height: normal,
+  $text-align : left
 ) {
   color: $color;
   font-family: $fontfamily;
@@ -46,9 +55,10 @@
   font-style: $font-style;
   font-weight: $font-weight;
   line-height: $line-height;
+  @if $text-align != left {
+    text-align: $text-align;
+  }
 }
-
-
 
 //Responsive Fonction
 @mixin min375() {
@@ -63,11 +73,9 @@
   }
 }
 
-
-
 //768 Tablette IPad
 // 1080 Tablette Petit Desktop
-//1440 
+//1440
 
 @mixin min768() {
   @media (min-width: 768px) {

@@ -2,16 +2,13 @@
   padding: 14px 89px 13px 17px;
 
   &__link {
-
-    @include flex($JustifyContent:center,$alignItems:center,$gap:42px);
+    @include flex($JustifyContent: center, $alignItems: center, $gap: 42px);
 
     &__logo {
-
-      @include flex($JustifyContent:center);
+      @include flex($JustifyContent: center);
       width: 100%;
 
       img {
-        
         padding: 0px 19px 0px 16px;
       }
     }
@@ -81,8 +78,7 @@
 }
 
 .location {
-
-  @include flex ($JustifyContent: center, $alignItems:center, $gap : 17px);
+  @include flex($JustifyContent: center, $alignItems: center, $gap: 17px);
   background-color: #eaeaea;
   height: 50px;
   width: 100%;

@@ -2,3 +2,8 @@
     $randomcolor : rgb(random(255), random(255), random(255));
     @return $randomcolor;
 }
+
+@function CalculatePourcentage($nombre, $total) {
+
+    @return $nombre*100/$total;
+}

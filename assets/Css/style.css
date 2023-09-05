@@ -140,29 +140,15 @@ footer {
   gap: 16px;
   padding: 22px 25px;
   background-color: #353535;
-  /*
-  @include min375() {
-    & {
-      flex-direction: row-reverse;
-      width: 100%;
-      padding: 30px 25px;
-      align-items: center;
-
-      ul {
-        flex-direction: row;
-        @include font(white, "Roboto", 16px, normal, 500, normal);
-      }
-    }
-  }
-  */
 }
 @media (min-width: 1080px) {
   footer {
+    display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    padding: 30px 25px;
     align-items: center;
     gap: 91px;
+    width: 100%;
+    padding: 30px 25px;
   }
 }
 footer .logo__txt {
@@ -223,12 +209,12 @@ footer ul {
 }
 
 .button {
-  border: 5px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
   gap: 20px;
+  border: 5px solid black;
+  padding: 50px;
 }
 
 .header__footer {
@@ -256,9 +242,12 @@ footer ul {
   width: 275px;
 }
 .entree p {
-  font-size: 16px;
+  color: rgb(0, 0, 0);
   font-family: "roboto";
+  font-size: 16px;
+  font-style: normal;
   font-weight: 300;
+  line-height: normal;
   flex-shrink: 0;
 }
 .entree .line {
@@ -271,14 +260,13 @@ footer ul {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 27px;
   padding-top: 39px;
   padding-bottom: 57px;
-  gap: 27px;
 }
 .menu h1 {
-  text-align: center;
   max-width: 73.33%;
   color: black;
   font-family: "Roboto";
@@ -286,22 +274,32 @@ footer ul {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 .menu h3 {
-  text-align: center;
   color: #353535;
   font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: center;
   max-width: 84%;
 }
 
 .fonctionnement {
-  padding: 48px 20px 68px 20px;
+  padding-right: 20px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  padding-left: 20px;
 }
 .fonctionnement h2 {
+  color: rgb(0, 0, 0);
+  font-family: "roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   margin-bottom: 26px;
 }
 .fonctionnement .btn__container {
@@ -310,23 +308,22 @@ footer ul {
   gap: 24.92px;
   padding-left: 12.51px;
 }
-@media (min-width: 376px) {
+@media (min-width: 1080px) {
   .fonctionnement .btn__container {
     flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .fonctionnement .btn__container .btn__fonctionnement {
-    max-width: 322.486px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   .fonctionnement {
-    max-width: 75%;
-    margin: auto;
-    padding: 0;
     padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 1080px;
+    margin: 0 auto;
   }
+}
+
+#linkrestaurant {
+  background-color: #f6f6f6;
 }
 
 .restaurant {
@@ -336,9 +333,16 @@ footer ul {
   padding: 20px;
   padding-top: 54px;
   padding-bottom: 66px;
-  background-color: #f6f6f6;
 }
-@media (min-width: 1024px) {
+.restaurant h2 {
+  color: rgb(0, 0, 0);
+  font-family: "roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (min-width: 1080px) {
   .restaurant {
     max-width: 75%;
     margin: auto;
@@ -360,13 +364,15 @@ footer ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    gap: 50px;
+    row-gap: 50px;
+    column-gap: 100px;
   }
 }
 @media (min-width: 1080px) {
   .restaurant .card02__container .card02 {
     width: 100%;
-    max-width: 490px;
+    max-width: 1080px;
+    margin: 0 auto;
   }
 }
 
@@ -399,9 +405,9 @@ footer ul {
 }
 .card02__description {
   display: flex;
-  gap: 13px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 13px;
   padding-bottom: 12px;
 }
 .card02__description img,
@@ -462,20 +468,75 @@ footer ul {
     stroke: none;
   }
 }
-.btn {
-  background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
+/*.btn {
+  //padding: 13px 16px;
+  background: linear-gradient($color-secondaire, $color-primaire);
   border-radius: 25px;
   color: white;
   border: 0;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+
+  box-shadow: 0px 4px 10px 0px #00000040;
+
   font-family: "roboto";
+
+  &__text {
+    padding: 13px 16px;
+  }
+
   transition-duration: 2s;
+
+  &:hover {
+    box-shadow: 0px 4px 15px 0px #00000059;
+
+  }
+}
+*/
+.btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  color: white;
+  border: 0;
+  /* Shadow/Button */
+  font-family: "roboto";
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  content: "";
+  background: linear-gradient(var(--ColorSecondaire), var(--ColorPrimaire));
+}
+.btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+}
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn a {
+  position: relative;
+  z-index: 2;
 }
 .btn__text {
   padding: 13px 16px;
-}
-.btn:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 .badge {
@@ -569,6 +630,12 @@ footer ul {
   left: -12px;
   border-radius: 100%;
   background-color: #9356dc;
+  color: white;
+  font-family: "roboto";
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   width: 24px;
   height: 24px;
 }

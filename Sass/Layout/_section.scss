@@ -1,18 +1,13 @@
 .button {
+  @include flex($flexDirection: column, $alignItems: center, $gap: 20px);
   border: 5px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 50px;
-  gap: 20px;
 }
 
 .header__footer {
   border: 5px solid black;
-  display: flex;
-  flex-direction: column;
 
-  gap: 50px;
+  @include flex($flexDirection: column, $gap: 50px);
 
   H1 {
     text-align: center;
@@ -20,10 +15,8 @@
 }
 
 .cartes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
+  @include flex($flexDirection: column, $alignItems: center, $gap: 48px);
+
   background-color: beige;
 
   H1 {
@@ -35,9 +28,8 @@
   width: 275px;
   //padding: 48px 65px;
   p {
-    font-size: 16px;
-    font-family: "roboto";
-    font-weight: 300;
+    @include font($fontsize:16px,$fontfamily:"roboto",$font-weight:300);
+
     flex-shrink: 0;
   }
 
@@ -50,118 +42,103 @@
 
 .menu {
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(
+    $flexDirection: column,
+    $alignItems: center,
+    $JustifyContent: center,
+    $gap: 27px
+  );
+
   padding-top: 39px;
   padding-bottom: 57px;
-  gap: 27px;
 
   h1 {
-    text-align: center;
-
     max-width: 73.33%;
 
-    @include font(black, "Roboto", 24px, normal, 700, normal);
+    @include font(black, "Roboto", 24px, normal, 700, normal, center);
   }
 
   h3 {
-    text-align: center;
-    @include font(#353535, "Roboto", 18px, normal, 300, normal);
+    @include font(#353535, "Roboto", 18px, normal, 300, normal, center);
     max-width: 84%;
   }
 }
 
 .fonctionnement {
+
   h2 {
+    @include font($fontfamily:"roboto",$fontsize:24px,$font-style:normal,$font-weight:700,$line-height:normal);
     margin-bottom: 26px;
   }
 
+
   .btn__container {
-    display: flex;
-    flex-direction: column;
-    gap: 24.92px;
+    @include flex($flexDirection: column, $gap: 24.92px);
+
     padding-left: 12.51px;
-  }
 
-  padding: 48px 20px 68px 20px;
-
-  @include min375() {
-
-
-    .btn__container {
+    @include min1080() {
       flex-direction: row;
-      flex-wrap: wrap;
-
-
-      .btn__fonctionnement {
-        max-width: 322.486px;
-      }
     }
   }
 
-  @include medium1000() {
+  padding-right: 20px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  padding-left: 20px;
 
-    max-width: 75%;
-    margin: auto;
-    padding:0;
-    
-    //padding-right: 180px;
+  @include min1080() {
     padding-top: 50px;
     padding-bottom: 50px;
-    //padding-left: 180px;
-    
+    max-width: 1080px;
+    margin: 0 auto;
   }
 }
 
+#linkrestaurant {
+  background-color: #f6f6f6;
+}
+
 .restaurant {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  @include flex($flexDirection: column, $gap: 28px);
+
   padding: 20px;
   padding-top: 54px;
   padding-bottom: 66px;
-  background-color: #f6f6f6;
 
-  @include medium1000() {
-    //padding-left: 180px;
-    //padding-right: 180px;
+  h2{
+    @include font($fontfamily:"roboto",$fontsize:24px,$font-style:normal,$font-weight:700,$line-height:normal);
+  }
+
+  @include min1080() {
     max-width: 75%;
     margin: auto;
   }
 
   .card02__container {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    @include flex($flexDirection: column, $gap: 18px);
 
-    @include min768(){
+    @include min768() {
       display: grid;
-      grid-template: auto / repeat(2,1fr);
+      grid-template: auto / repeat(2, 1fr);
     }
 
     @include min1080() {
       & {
-
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        gap: 50px;
+        row-gap: 50px;
+        column-gap: 100px;
       }
-
-      
     }
 
     .card02 {
-      
-
-      @include min1080(){
+      @include min1080() {
         width: 100%;
-        max-width: 490px;
+        max-width: 1080px;
+        margin: 0 auto;
       }
     }
   }
-
-  
 }
