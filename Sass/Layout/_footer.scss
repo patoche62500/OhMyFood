@@ -1,37 +1,60 @@
 footer {
-  width: 375px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  //width: 375px;
+
+  @include flex($flexDirection:column, $gap:16px);
+
   padding: 22px 25px;
   background-color: #353535;
 
+
+  @include min1080{
+    flex-direction: row-reverse;
+      width: 100%;
+      padding: 30px 25px;
+      align-items: center;
+      gap:91px;
+  }
+
   .logo__txt {
     @include font(white, "Shrikhand", 18px, normal, 400, normal);
+
+  
+  }
+
+  nav {
+    display: grid;
+    row-gap: 7px;
+    @include min1080(){
+      display: flex;
+      column-gap: 31px;
+    }
   }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
 
-  @include min375(){
-    &{
-      flex-direction:row-reverse;
+    @include min1080{
+      flex-direction: row;
+    }
+  }
+  /*
+  @include min375() {
+    & {
+      flex-direction: row-reverse;
       width: 100%;
       padding: 30px 25px;
       align-items: center;
-      
-      
+
       ul {
         flex-direction: row;
         @include font(white, "Roboto", 16px, normal, 500, normal);
       }
     }
-
   }
+  */
 }
 
 .footermobile {

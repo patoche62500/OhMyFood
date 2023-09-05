@@ -1,4 +1,5 @@
 @mixin flex(
+  $flexwrap: nowrap,
   $flexDirection: row,
   $JustifyContent: flex-start,
   $alignItems: stretch,
@@ -25,26 +26,29 @@
   @if $aligntext != left {
     text-align: $aligntext;
   }
+  @if $flexwrap != nowrap {
+    flex-wrap: $flexwrap;
+  }
 }
 
 //font function
 @mixin font(
   $color: white,
-  $fontfamily: 'Roboto',
+  $fontfamily: "Roboto",
   $fontsize: 16px,
   $font-style: normal,
   $font-weight: 500,
-  $line-height: normal,
-)
-{
-  color:$color;
+  $line-height: normal
+) {
+  color: $color;
   font-family: $fontfamily;
   font-size: $fontsize;
   font-style: $font-style;
   font-weight: $font-weight;
   line-height: $line-height;
-
 }
+
+
 
 //Responsive Fonction
 @mixin min375() {
@@ -55,6 +59,24 @@
 
 @mixin medium1000() {
   @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+
+
+//768 Tablette IPad
+// 1080 Tablette Petit Desktop
+//1440 
+
+@mixin min768() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min1080() {
+  @media (min-width: 1080px) {
     @content;
   }
 }

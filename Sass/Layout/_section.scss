@@ -85,69 +85,83 @@
     padding-left: 12.51px;
   }
 
-  padding-right: 20px;
-  padding-top: 48px;
-  padding-bottom: 68px;
-  padding-left: 20px;
+  padding: 48px 20px 68px 20px;
 
   @include min375() {
 
-    @include medium1000() {
-      padding-right: 180px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 180px;
-    }
-    
 
     .btn__container {
       flex-direction: row;
       flex-wrap: wrap;
-      //justify-content: center;
+
 
       .btn__fonctionnement {
         max-width: 322.486px;
       }
     }
   }
+
+  @include medium1000() {
+
+    max-width: 75%;
+    margin: auto;
+    padding:0;
+    
+    //padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //padding-left: 180px;
+    
+  }
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 28px;
   padding: 20px;
   padding-top: 54px;
   padding-bottom: 66px;
   background-color: #f6f6f6;
 
-  @include min375() {
-
-    @include medium1000() {
-      padding-left: 180px;
-      padding-right: 180px;
-    }
-    
-    gap:28px;
+  @include medium1000() {
+    //padding-left: 180px;
+    //padding-right: 180px;
+    max-width: 75%;
+    margin: auto;
   }
 
   .card02__container {
     display: flex;
     flex-direction: column;
-    gap:18px;
+    gap: 18px;
 
-    @include min375() {
+    @include min768(){
+      display: grid;
+      grid-template: auto / repeat(2,1fr);
+    }
+
+    @include min1080() {
       & {
+
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         gap: 50px;
       }
 
-      .card02 {
+      
+    }
+
+    .card02 {
+      
+
+      @include min1080(){
         width: 100%;
         max-width: 490px;
       }
     }
   }
+
+  
 }

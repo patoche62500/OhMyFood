@@ -1,31 +1,24 @@
-header {
+.navbar {
+  padding: 14px 89px 13px 17px;
 
-  .navbar {
-    padding: 14px 89px 13px 17px;
+  &__link {
 
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 42px;
+    @include flex($JustifyContent:center,$alignItems:center,$gap:42px);
 
-      .logo {
-        display: flex;
-        justify-content: center;
+    &__logo {
 
-        width: 100%;
+      @include flex($JustifyContent:center);
+      width: 100%;
 
-        img {
-          padding: 0px 19px 0px 16px;
-        }
+      img {
         
+        padding: 0px 19px 0px 16px;
       }
+    }
 
-      .back {
-        padding-left: 17px;
-        opacity: 0;
-      }
-
+    .back {
+      padding-left: 17px;
+      opacity: 0;
     }
   }
 }
@@ -88,11 +81,13 @@ header {
 }
 
 .location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
+
+  @include flex ($JustifyContent: center, $alignItems:center, $gap : 17px);
   background-color: #eaeaea;
   height: 50px;
   width: 100%;
+
+  p {
+    @include font(#353535, "Roboto", 16px, normal, 500, normal);
+  }
 }
