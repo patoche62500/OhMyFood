@@ -27,7 +27,7 @@ a {
   @include font(white, "Roboto", 16px, normal, 500, normal);
 }
 
-body{
+.loader{
   //opacity: 1;
   
   animation: loader linear 1.5s;

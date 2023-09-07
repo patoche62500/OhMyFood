@@ -720,7 +720,7 @@ a {
   line-height: normal;
 }
 
-body {
+.loader {
   animation: loader linear 1.5s;
 }
 
