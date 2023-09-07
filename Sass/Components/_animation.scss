@@ -11,3 +11,24 @@
    
   }
 }
+
+@keyframes card {
+  0%{
+  
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes cardcheck{
+  from{
+    transform: scaleX(0);
+   
+  }
+  to{
+    
+    transform: scaleX(1);
+  }
+}

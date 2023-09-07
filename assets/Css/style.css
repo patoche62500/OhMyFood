@@ -436,6 +436,8 @@ footer ul {
   background-color: aliceblue;
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  transform-origin: 0% 50%;
+  animation: card linear 2s;
 }
 .card__content {
   display: flex;
@@ -468,8 +470,16 @@ footer ul {
   font-weight: 700;
   line-height: normal;
 }
-.card:hover img {
+.card img {
+  display: none;
+  animation: cardcheck 500ms linear paused infinite;
+  animation-direction: alternate;
+  transform-origin: 100% 0%;
+  animation-iteration-count: 1;
+}
+.card:active img {
   display: inline;
+  animation-play-state: running;
 }
 @media (min-width: 1080px) {
   .card {
@@ -477,6 +487,33 @@ footer ul {
     margin: auto;
     width: 100%;
   }
+}
+.card--1 {
+  animation-delay: 100ms;
+}
+.card--2 {
+  animation-delay: 200ms;
+}
+.card--3 {
+  animation-delay: 300ms;
+}
+.card--4 {
+  animation-delay: 400ms;
+}
+.card--5 {
+  animation-delay: 500ms;
+}
+.card--6 {
+  animation-delay: 600ms;
+}
+.card--7 {
+  animation-delay: 700ms;
+}
+.card--8 {
+  animation-delay: 800ms;
+}
+.card--9 {
+  animation-delay: 900ms;
 }
 
 .card02 {
@@ -551,6 +588,22 @@ footer ul {
   100% {
     fill: url("#paint0_linear_25368_712");
     stroke: none;
+  }
+}
+@keyframes card {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes cardcheck {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 .btn {

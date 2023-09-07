@@ -23,14 +23,38 @@
     }
   }
 
-  &:hover img {
+  & img{
+    display: none;
+
+    animation: cardcheck 500ms linear paused infinite;
+    animation-direction: alternate;
+    transform-origin: 100% 0%;
+    animation-iteration-count: 1;
+  }
+
+  &:active img {
     display: inline;
+    
+    animation-play-state: running;
+   
   }
 
   @include min1080 {
     max-width: 634px;
     margin: auto;
     width: 100%;
+  }
+
+
+
+  transform-origin: 0% 50%;
+  animation: card linear 2s;
+  
+
+  @for $i from 1 through 9 {
+    &--#{$i} {
+      animation-delay: 100ms * $i;
+    }
   }
 }
 
