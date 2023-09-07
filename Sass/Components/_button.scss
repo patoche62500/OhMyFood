@@ -1,6 +1,6 @@
 @use "sass:color";
 
-.btn{
+.btn {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
@@ -57,13 +57,11 @@
   &__text {
     padding: 13px 16px;
 
-    &__page{
-      padding:16px 48px 15px 49px;
+    &__page {
+      padding: 16px 48px 15px 49px;
     }
   }
-
 }
-
 
 .badge {
   background-color: $color-tertiaire;
