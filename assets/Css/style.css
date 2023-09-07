@@ -720,4 +720,20 @@ a {
   line-height: normal;
 }
 
+body {
+  animation: loader linear 1.5s;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+    background-color: black;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
