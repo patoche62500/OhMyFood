@@ -9,10 +9,28 @@
 
     padding: 15px;
     width: 100%;
+
+    &__titre {
+      @include font(black, "Roboto", 18px, normal, 500, normal);
+    }
+
+    &__description {
+      @include font(black, "Roboto", 15.043px, normal, 300, normal);
+    }
+
+    &__prix {
+      @include font(black, "Roboto", 15.043px, normal, 700, normal);
+    }
   }
 
   &:hover img {
     display: inline;
+  }
+
+  @include min1080 {
+    max-width: 634px;
+    margin: auto;
+    width: 100%;
   }
 }
 

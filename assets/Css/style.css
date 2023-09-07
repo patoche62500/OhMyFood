@@ -52,7 +52,8 @@
 
 /*Layout*/
 .navbar {
-  padding: 14px 89px 13px 17px;
+  padding: 14px 89px 13px 89px;
+  position: relative;
 }
 .navbar__link {
   display: flex;
@@ -69,8 +70,8 @@
   padding: 0px 19px 0px 16px;
 }
 .navbar__link .back {
-  padding-left: 17px;
-  opacity: 0;
+  position: absolute;
+  left: 17px;
 }
 
 .header-mobile {
@@ -249,6 +250,7 @@ footer ul {
   font-weight: 300;
   line-height: normal;
   flex-shrink: 0;
+  text-transform: uppercase;
 }
 .entree .line {
   margin-right: 235px;
@@ -376,6 +378,58 @@ footer ul {
   }
 }
 
+.bg {
+  width: 100%;
+  max-height: 383px;
+  object-fit: cover;
+  position: relative;
+}
+
+.plat {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+  position: relative;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 32px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 40px;
+}
+.plat__titre {
+  display: flex;
+  align-items: end;
+  gap: 22px;
+  color: #101010;
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.plat__container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (min-width: 1080px) {
+  .plat__container {
+    max-width: 634px;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 1080px) {
+  .plat {
+    align-items: center;
+    max-width: 1055px;
+    margin: auto;
+  }
+}
+
 /*Components*/
 .card {
   display: flex;
@@ -390,8 +444,39 @@ footer ul {
   padding: 15px;
   width: 100%;
 }
+.card__content__titre {
+  color: black;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card__content__description {
+  color: black;
+  font-family: "Roboto";
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.card__content__prix {
+  color: black;
+  font-family: "Roboto";
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .card:hover img {
   display: inline;
+}
+@media (min-width: 1080px) {
+  .card {
+    max-width: 634px;
+    margin: auto;
+    width: 100%;
+  }
 }
 
 .card02 {
@@ -468,29 +553,6 @@ footer ul {
     stroke: none;
   }
 }
-/*.btn {
-  //padding: 13px 16px;
-  background: linear-gradient($color-secondaire, $color-primaire);
-  border-radius: 25px;
-  color: white;
-  border: 0;
-
-  box-shadow: 0px 4px 10px 0px #00000040;
-
-  font-family: "roboto";
-
-  &__text {
-    padding: 13px 16px;
-  }
-
-  transition-duration: 2s;
-
-  &:hover {
-    box-shadow: 0px 4px 15px 0px #00000059;
-
-  }
-}
-*/
 .btn {
   position: relative;
   overflow: hidden;
@@ -501,6 +563,9 @@ footer ul {
   font-family: "roboto";
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 218px;
+  margin: auto;
 }
 .btn::before {
   position: absolute;
@@ -537,6 +602,9 @@ footer ul {
 }
 .btn__text {
   padding: 13px 16px;
+}
+.btn__text__page {
+  padding: 16px 48px 15px 49px;
 }
 
 .badge {

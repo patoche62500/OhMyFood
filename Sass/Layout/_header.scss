@@ -1,5 +1,8 @@
 .navbar {
-  padding: 14px 89px 13px 17px;
+  //padding: 14px 89px 13px 17px;
+  padding: 14px 89px 13px 89px;
+
+  position: relative;
 
   &__link {
     @include flex($JustifyContent: center, $alignItems: center, $gap: 42px);
@@ -14,8 +17,8 @@
     }
 
     .back {
-      padding-left: 17px;
-      opacity: 0;
+      position: absolute;
+      left: 17px;
     }
   }
 }
