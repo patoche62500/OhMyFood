@@ -461,6 +461,10 @@ footer ul {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 287px;
 }
 .card__content__prix {
   color: black;
@@ -524,6 +528,7 @@ footer ul {
   flex-direction: column;
   gap: 16px;
   border-radius: 15px;
+  position: relative;
 }
 .card02__description {
   display: flex;
@@ -666,6 +671,10 @@ footer ul {
   width: 80px;
   padding: 7px 9px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  z-index: 1;
 }
 
 .btnlike {
@@ -685,7 +694,20 @@ footer ul {
 }
 
 .btn__02 {
+  position: absolute;
+  top: 197px;
+  bottom: 33px;
+  right: 25px;
+}
+.btn__02__page svg > path {
+  fill: none;
+  stroke: #101010;
   padding-right: 33px;
+  animation: heartlike 100ms linear infinite paused;
+  animation-direction: alternate;
+}
+.btn__02__page:active svg > path {
+  animation-play-state: running;
 }
 .btn__02 svg > path {
   fill: none;

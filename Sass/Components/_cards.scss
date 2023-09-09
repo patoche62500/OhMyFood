@@ -16,6 +16,10 @@
 
     &__description {
       @include font(black, "Roboto", 15.043px, normal, 300, normal);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 287px;
     }
 
     &__prix {
@@ -66,6 +70,8 @@
   @include flex($flexDirection: column, $gap: 16px);
 
   border-radius: 15px;
+
+  position: relative;
 
   &__description {
     @include flex($JustifyContent: center, $alignItems: center, $gap: 13px);
