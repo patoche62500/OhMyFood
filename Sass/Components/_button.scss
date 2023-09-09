@@ -132,7 +132,11 @@
 }
 
 .btn__03 {
-  padding-right: 33px;
+  position: absolute;
+  top:197px;
+  bottom: 33px;
+  right: 25px;
+
   svg > path {
     fill: none;
     stroke: #101010;
