@@ -1,10 +1,10 @@
 # Installation du projet
 
 # Commandes de dev
-npm run dev
+> npm run dev
 
 # Commandes de prod
-npm run build
+> npm run build
 
 # Lien page Github
-https://patoche62500.github.io/OhMyFood/
+> https://patoche62500.github.io/OhMyFood/
