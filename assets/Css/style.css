@@ -74,49 +74,6 @@
   left: 17px;
 }
 
-.header-mobile {
-  width: 100%;
-}
-.header-mobile .navbar {
-  padding: 14px 89px 13px 17px;
-}
-.header-mobile .navbar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 42px;
-}
-.header-mobile .navbar ul .logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.header-mobile .navbar ul .back {
-  opacity: 1;
-}
-.header-mobile .navbar ul .logo img {
-  padding: 0px 19px 0px 16px;
-}
-
-.headerdesktop {
-  max-width: 1440px;
-  height: 96px;
-}
-.headerdesktop .navbar {
-  padding: 14px 89px 13px 17px;
-  background-color: aquamarine;
-}
-.headerdesktop .navbar ul {
-  display: flex;
-  align-items: center;
-  gap: 42px;
-}
-.headerdesktop .navbar ul .logo {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .location {
   display: flex;
   justify-content: center;
@@ -179,34 +136,6 @@ footer ul {
   footer ul {
     flex-direction: row;
   }
-}
-
-.footermobile {
-  width: 375px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 22px 25px;
-  background-color: #353535;
-}
-.footermobile ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.footerdesktop {
-  height: 114px;
-  background-color: #353535;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  gap: 16px;
-  padding: 30px 25px;
-}
-.footerdesktop ul {
-  display: flex;
-  gap: 7px;
 }
 
 .button {
@@ -613,6 +542,20 @@ footer ul {
     transform: scaleX(1);
   }
 }
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes hidecontenu {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 .btn {
   position: relative;
   overflow: hidden;
@@ -810,7 +753,7 @@ a {
   align-items: center;
   transition: opacity 1s ease-in-out;
   animation: hidecontenu 1s 5s both;
-  z-index: 2;
+  z-index: -1;
 }
 .loader__container__dot {
   width: 50px;
@@ -828,17 +771,6 @@ a {
 }
 .loader__container__dot--d3 {
   animation-delay: 3s;
-}
-
-@keyframes loader {
-  100% {
-    transform: translateY(-30px);
-  }
-}
-@keyframes hidecontenu {
-  100% {
-    opacity: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

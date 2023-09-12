@@ -32,3 +32,19 @@
     transform: scaleX(1);
   }
 }
+
+@keyframes loader {
+  100%{
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes hidecontenu{
+  0%{
+    z-index: 2;
+  }
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
