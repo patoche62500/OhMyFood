@@ -50,6 +50,46 @@
   color: var(--colorColor);
 }
 
+@keyframes heartlike {
+  0% {
+    fill: none;
+    stroke: #101010;
+  }
+  100% {
+    fill: url("#paint0_linear_25368_712");
+    stroke: none;
+  }
+}
+@keyframes card {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes cardcheck {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes hidecontenu {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 /*Layout*/
 .navbar {
   padding: 14px 89px 13px 89px;
@@ -314,12 +354,23 @@ footer ul {
   position: relative;
 }
 
+.hero {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 61px;
+}
+.hero img {
+  min-height: 275px;
+}
+
 .plat {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: relative;
-  bottom: 55px;
+  margin-top: 200px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -327,6 +378,19 @@ footer ul {
   padding-left: 17px;
   padding-right: 17px;
   padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .plat {
+    margin-top: 300px;
+  }
+}
+@media (min-width: 1080px) {
+  .plat {
+    align-items: center;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: 342.66px;
+  }
 }
 .plat__titre {
   display: flex;
@@ -348,13 +412,6 @@ footer ul {
   .plat__container {
     max-width: 634px;
     width: 100%;
-    margin: auto;
-  }
-}
-@media (min-width: 1080px) {
-  .plat {
-    align-items: center;
-    max-width: 1055px;
     margin: auto;
   }
 }
@@ -517,46 +574,6 @@ footer ul {
   height: 251px;
 }
 
-@keyframes heartlike {
-  0% {
-    fill: none;
-    stroke: #101010;
-  }
-  100% {
-    fill: url("#paint0_linear_25368_712");
-    stroke: none;
-  }
-}
-@keyframes card {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes cardcheck {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@keyframes loader {
-  100% {
-    transform: translateY(-30px);
-  }
-}
-@keyframes hidecontenu {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
 .btn {
   position: relative;
   overflow: hidden;
