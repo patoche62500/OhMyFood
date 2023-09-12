@@ -1,49 +1,43 @@
-
 @keyframes heartlike {
-  0%{
+  0% {
     fill: none;
-    stroke : #101010;
-    
+    stroke: #101010;
   }
   100% {
     fill: url("#paint0_linear_25368_712");
     stroke: none;
-   
   }
 }
 
 @keyframes card {
-  0%{
-  
+  0% {
     transform: scaleX(0);
   }
-  100%{
+  100% {
     transform: scaleX(1);
   }
 }
 
-@keyframes cardcheck{
-  from{
+@keyframes cardcheck {
+  from {
     transform: scaleX(0);
-   
   }
-  to{
-    
+  to {
     transform: scaleX(1);
   }
 }
 
 @keyframes loader {
-  100%{
+  100% {
     transform: translateY(-30px);
   }
 }
 
-@keyframes hidecontenu{
-  0%{
+@keyframes hidecontenu {
+  0% {
     z-index: 2;
   }
-  100%{
+  100% {
     opacity: 0;
     z-index: -1;
   }
