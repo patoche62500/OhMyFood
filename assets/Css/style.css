@@ -50,6 +50,46 @@
   color: var(--colorColor);
 }
 
+@keyframes heartlike {
+  0% {
+    fill: none;
+    stroke: #101010;
+  }
+  100% {
+    fill: url("#paint0_linear_25368_712");
+    stroke: none;
+  }
+}
+@keyframes card {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes cardcheck {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes hidecontenu {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 /*Layout*/
 .navbar {
   padding: 14px 89px 13px 89px;
@@ -314,12 +354,23 @@ footer ul {
   position: relative;
 }
 
+.hero {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 61px;
+}
+.hero img {
+  min-height: 275px;
+}
+
 .plat {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: relative;
-  bottom: 55px;
+  margin-top: 200px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -328,9 +379,22 @@ footer ul {
   padding-right: 17px;
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .plat {
+    margin-top: 300px;
+  }
+}
+@media (min-width: 1080px) {
+  .plat {
+    align-items: center;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: 342.66px;
+  }
+}
 .plat__titre {
   display: flex;
-  align-items: end;
+  align-items: baseline;
   gap: 22px;
   color: #101010;
   font-family: "Shrikhand";
@@ -351,13 +415,6 @@ footer ul {
     margin: auto;
   }
 }
-@media (min-width: 1080px) {
-  .plat {
-    align-items: center;
-    max-width: 1055px;
-    margin: auto;
-  }
-}
 
 /*Components*/
 .card {
@@ -365,8 +422,26 @@ footer ul {
   background-color: aliceblue;
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  overflow: hidden;
   transform-origin: 0% 50%;
   animation: card linear 1s;
+}
+.card .animation {
+  display: grid;
+  grid-template: auto/60px 0px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.card .animation__prix {
+  color: black;
+  font-family: "Roboto";
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 15px;
+  display: flex;
+  align-items: end;
 }
 .card__content {
   display: flex;
@@ -378,7 +453,6 @@ footer ul {
   overflow: hidden;
 }
 .card__content__container {
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -398,24 +472,8 @@ footer ul {
   font-weight: 300;
   line-height: normal;
 }
-.card__content__prix {
-  color: black;
-  font-family: "Roboto";
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.card img {
-  display: none;
-  animation: cardcheck 500ms linear paused infinite;
-  animation-direction: alternate;
-  transform-origin: 100% 0%;
-  animation-iteration-count: 1;
-}
-.card:active img {
-  display: inline;
-  animation-play-state: running;
+.card:hover .animation {
+  grid-template: auto/55px 60px;
 }
 @media (min-width: 1080px) {
   .card {
@@ -517,46 +575,6 @@ footer ul {
   height: 251px;
 }
 
-@keyframes heartlike {
-  0% {
-    fill: none;
-    stroke: #101010;
-  }
-  100% {
-    fill: url("#paint0_linear_25368_712");
-    stroke: none;
-  }
-}
-@keyframes card {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes cardcheck {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@keyframes loader {
-  100% {
-    transform: translateY(-30px);
-  }
-}
-@keyframes hidecontenu {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
 .btn {
   position: relative;
   overflow: hidden;

@@ -161,6 +161,17 @@
   position: relative;
 }
 
+.hero{
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top:61px;
+
+  & img{
+    min-height: 275px;
+  }
+}
+
 .plat {
   background-color: #f6f6f6;
 
@@ -168,8 +179,9 @@
   width: 100%;
   //height: 100%;
   position: relative;
-  bottom: 55px;
-
+  //bottom: 55px;
+  margin-top: 200px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -177,10 +189,25 @@
   padding-left: 17px;
   padding-right: 17px;
   padding-bottom: 40px;
+
+  @include min768(){
+
+    margin-top: 300px;
+  }
+
+
+  @include min1080 {
+    align-items: center;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: 342.66px;
+  }
+
+
   
   &__titre{
     display: flex;
-    align-items: end;
+    align-items: baseline;
     gap: 22px;
     @include font(#101010, "Shrikhand", 28px, normal, 400, normal);
   }
@@ -197,9 +224,5 @@
     }
   }
 
-  @include min1080 {
-    align-items: center;
-    max-width: 1055px;
-    margin: auto;
-  }
+  
 }
