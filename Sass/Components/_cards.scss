@@ -5,17 +5,20 @@
   box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
 
   &__content {
-    @include flex($JustifyContent: space-between, $alignItems: flex-end, $gap:5px);
+    @include flex(
+      $JustifyContent: space-between,
+      $alignItems: flex-end,
+      $gap: 5px
+    );
 
     padding: 15px;
     width: 100%;
     overflow: hidden;
 
-    &__container{
+    &__container {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      
     }
 
     &__titre {
@@ -24,7 +27,6 @@
 
     &__description {
       @include font(black, "Roboto", 15.043px, normal, 300, normal);
-      
     }
 
     &__prix {
@@ -32,7 +34,7 @@
     }
   }
 
-  & img{
+  & img {
     display: none;
 
     animation: cardcheck 500ms linear paused infinite;
@@ -43,9 +45,8 @@
 
   &:active img {
     display: inline;
-    
+
     animation-play-state: running;
-   
   }
 
   @include min1080 {
@@ -54,11 +55,8 @@
     width: 100%;
   }
 
-
-
   transform-origin: 0% 50%;
   animation: card linear 1s;
-  
 
   @for $i from 1 through 9 {
     &--#{$i} {
