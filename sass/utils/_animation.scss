@@ -29,9 +29,29 @@
 
 @keyframes loader {
   100% {
+
     transform: translateY(-30px);
+
+  
+
+   
+    
   }
 }
+
+@keyframes loaderrotate {
+  100% {
+
+    
+
+   transform: rotate(180deg);
+
+   
+    
+  }
+}
+
+
 
 @keyframes hidecontenu {
   0% {
@@ -40,5 +60,17 @@
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+
+@keyframes hideall {
+  0%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }

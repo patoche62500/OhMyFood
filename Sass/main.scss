@@ -29,6 +29,13 @@ a {
   @include font(white, "Roboto", 16px, normal, 500, normal);
 }
 
+.loader {
+  &__content {
+    opacity: 1;
+    animation: hideall 10s linear;
+  }
+}
+
 .loader__container {
   position: absolute;
   background-color: white;
@@ -38,24 +45,27 @@ a {
   justify-content: center;
   align-items: center;
   transition: opacity 1s ease-in-out;
+  opacity: 1;
 
-  animation: hidecontenu 1s 5s both;
+  animation: hidecontenu 5s 5s both;
 
   z-index: -1;
 
   &__dot {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 10%;
     background: #000;
     margin: 0 15px;
-    //animation: loader infinite 0.3s alternate;
 
-    animation: loader infinite 0.3s alternate;
+
+    animation: loaderrotate infinite 0.3s alternate;
+
 
     @for $i from 1 through 3 {
       &--d#{$i} {
         animation-delay: 1s * $i;
+        background: RandomColor();
       }
     }
   }
