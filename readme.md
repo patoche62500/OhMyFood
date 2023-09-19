@@ -1,6 +1,6 @@
 # Installation du projet
 ```
-npm i sass
+npm i
 ```
 
 # Commandes de dev
