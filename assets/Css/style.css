@@ -660,6 +660,7 @@ footer ul {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-align: center;
 }
 
 .btnlike {
@@ -882,15 +883,15 @@ a {
 }
 .loader__container__dot--d1 {
   animation-delay: 1s;
-  background: rgb(130, 61, 215);
+  background: rgb(205, 128, 244);
 }
 .loader__container__dot--d2 {
   animation-delay: 2s;
-  background: rgb(16, 197, 94);
+  background: rgb(141, 69, 198);
 }
 .loader__container__dot--d3 {
   animation-delay: 3s;
-  background: rgb(171, 7, 201);
+  background: rgb(99, 30, 141);
 }
 
 /*# sourceMappingURL=style.css.map */
