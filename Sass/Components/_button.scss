@@ -1,5 +1,5 @@
 @use "sass:color";
-
+// Bouton Restaurant //
 .btn {
   position: relative;
   overflow: hidden;
@@ -96,7 +96,7 @@
     position: absolute;
   }
 }
-
+// bouton Coeur sans remplissage //
 .btn__02 {
   //
   position: absolute;
@@ -130,7 +130,7 @@
     animation-play-state: running;
   }
 }
-
+// bouton coeur avec remplissage //
 .btn__03 {
   position: absolute;
   top:197px;

@@ -161,13 +161,13 @@
   position: relative;
 }
 
-.hero{
+.hero {
   position: absolute;
   width: 100%;
   z-index: 0;
-  top:61px;
+  top: 61px;
 
-  & img{
+  & img {
     min-height: 275px;
   }
 }
@@ -190,11 +190,9 @@
   padding-right: 17px;
   padding-bottom: 40px;
 
-  @include min768(){
-
+  @include min768() {
     margin-top: 300px;
   }
-
 
   @include min1080 {
     align-items: center;
@@ -203,9 +201,7 @@
     margin-top: 342.66px;
   }
 
-
-  
-  &__titre{
+  &__titre {
     display: flex;
     align-items: baseline;
     gap: 22px;
@@ -223,6 +219,4 @@
       margin: auto;
     }
   }
-
-  
 }

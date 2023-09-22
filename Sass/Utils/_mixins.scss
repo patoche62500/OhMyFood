@@ -47,7 +47,7 @@
   $font-style: normal,
   $font-weight: 500,
   $line-height: normal,
-  $text-align : left
+  $text-align: left
 ) {
   color: $color;
   font-family: $fontfamily;
@@ -73,9 +73,9 @@
   }
 }
 
-//768 Tablette IPad
+// 768 Tablette IPad
 // 1080 Tablette Petit Desktop
-//1440
+// 1440 Grand Desktop
 
 @mixin min768() {
   @media (min-width: 768px) {
