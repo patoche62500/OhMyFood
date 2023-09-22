@@ -1,29 +1,26 @@
 // carte menu page//
 .card {
-
   display: flex;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
   overflow: hidden;
 
-  .animation{
-    display:grid;
-    grid-template:auto / 60px 0px;
+  .animation {
+    display: grid;
+    grid-template: auto / 60px 0px;
     height: 100%;
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 
     &__prix {
       @include font(black, "Roboto", 15.043px, normal, 700, normal);
       padding: 15px;
       display: flex;
       align-items: end;
-      
     }
   }
 
   &__content {
-
     @include flex(
       $JustifyContent: space-between,
       $alignItems: flex-end,
@@ -37,26 +34,22 @@
     &__container {
       text-overflow: ellipsis;
       white-space: nowrap;
+      overflow: hidden;
     }
 
     &__titre {
       @include font(black, "Roboto", 18px, normal, 500, normal);
-
     }
 
     &__description {
       @include font(black, "Roboto", 15.043px, normal, 300, normal);
     }
-
-    
   }
 
   &:hover {
-
-    .animation{
-      grid-template:auto / 55px 60px;
+    .animation {
+      grid-template: auto / 55px 60px;
     }
-
   }
 
   @include min1080 {

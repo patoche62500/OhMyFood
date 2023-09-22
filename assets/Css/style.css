@@ -435,7 +435,7 @@ footer ul {
 /*Components*/
 .card {
   display: flex;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   overflow: hidden;
@@ -471,6 +471,7 @@ footer ul {
 .card__content__container {
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .card__content__titre {
   color: black;
@@ -883,15 +884,15 @@ a {
 }
 .loader__container__dot--d1 {
   animation-delay: 1s;
-  background: rgb(205, 128, 244);
+  background: rgb(95, 91, 78);
 }
 .loader__container__dot--d2 {
   animation-delay: 2s;
-  background: rgb(141, 69, 198);
+  background: rgb(169, 214, 136);
 }
 .loader__container__dot--d3 {
   animation-delay: 3s;
-  background: rgb(99, 30, 141);
+  background: rgb(161, 155, 147);
 }
 
 /*# sourceMappingURL=style.css.map */
