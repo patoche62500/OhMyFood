@@ -32,17 +32,21 @@
     overflow: hidden;
 
     &__container {
-      text-overflow: ellipsis;
-      white-space: nowrap;
       overflow: hidden;
     }
 
     &__titre {
       @include font(black, "Roboto", 18px, normal, 500, normal);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     &__description {
       @include font(black, "Roboto", 15.043px, normal, 300, normal);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
 

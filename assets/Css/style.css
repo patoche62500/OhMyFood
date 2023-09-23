@@ -469,8 +469,6 @@ footer ul {
   overflow: hidden;
 }
 .card__content__container {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 .card__content__titre {
@@ -480,6 +478,9 @@ footer ul {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card__content__description {
   color: black;
@@ -488,6 +489,9 @@ footer ul {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card:hover .animation {
   grid-template: auto/55px 60px;
@@ -884,15 +888,15 @@ a {
 }
 .loader__container__dot--d1 {
   animation-delay: 1s;
-  background: rgb(95, 91, 78);
+  background: rgb(218, 255, 168);
 }
 .loader__container__dot--d2 {
   animation-delay: 2s;
-  background: rgb(169, 214, 136);
+  background: rgb(95, 156, 161);
 }
 .loader__container__dot--d3 {
   animation-delay: 3s;
-  background: rgb(161, 155, 147);
+  background: rgb(187, 18, 251);
 }
 
 /*# sourceMappingURL=style.css.map */
